@@ -40,13 +40,16 @@
 #' RColorBrewer
 #' R.utils
 #'
+#' @importFrom
+#' graphics
+#' barplot
+#' persp
+#' plot
+#' 
 #' @export
 #'
 
 initialize_ <- function(){
-  library(R.utils)
-  library(dplyr)
-  library(RColorBrewer)
 
   # Initialise the 1-Qubit system : {|0>, |1>}
   Q0 <<- c(1, 0)
