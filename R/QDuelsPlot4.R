@@ -45,5 +45,5 @@ QDuelsPlot4 <- function(Psi, alpha1, alpha2){
       z[i, j] <- d[[3]] - (1-d[[1]])
     }
   }
-  persp(x, y, z, xlab="a", ylab="b", zlab="<pi_Bob_diff>", theta=20, phi=50, r=2, shade=0.4, axes=TRUE, scale=TRUE, box=TRUE, nticks=5, ticktype = "detailed", col="green")
+  persp(a, b, z, xlab="a", ylab="b", zlab="<pi_Bob_diff>", theta=20, phi=50, r=2, shade=0.4, axes=TRUE, scale=TRUE, box=TRUE, nticks=5, ticktype = "detailed", col="green")
 }
