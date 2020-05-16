@@ -1,0 +1,50 @@
+##############################################################################
+#                                                                            #
+#           PAYOFF MATRIX FOR THE QUANTUM PRISONER'S DILEMMA GAME            #
+#                                                                            #
+##############################################################################
+
+#' @title
+#' Quantum Prisoner's Dilemma game: Payoff Matrix
+#'
+#' @description
+#' This function generates the payoff matrix for the Quantum Prisoner's Dilemma game . 'moves' is a list of the possible strategies for each of the players and {w, x, y, z} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, z>w>x>y.
+#' This function also plots the probability distribution plots of the qubits for all the possible combinations of the strategies of the players.
+#'
+#' @params
+#' moves, w, x, y, z
+#'
+#' @usage
+#' PayoffMatrix_QPD(moves, w, x, y, z)
+#'
+#' @keywords
+#' Quantum Game Theory, Prisoner's Dilemma
+#'
+#' @references
+#' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
+#' \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
+#' \url{https://arxiv.org/pdf/quant-ph/0004076.pdf}\cr
+#'
+#'
+#' @examples
+#' initialize_()
+#' moves <- list(I2, sigmaX(I2), Hadamard(I2), sigmaZ(I2))
+#' PayoffMatrix_QPD(moves, 3, 1, 0, 5)
+#'
+#' @export
+#'
+
+
+PayoffMatrix_QPD <- function(moves, w, x, y, z){
+  n <- length(moves)
+  Alice <- matrix(0, n, n)
+  Bob <- matrix(0, n, n)
+  for(i in 1:n){
+    for (j in 1:n){
+      X <- QPD(moves[[i]], moves[[j]], w, x, y, z)
+      Alice[i, j] <- X[[1]]
+      Bob[i, j] <- X[[2]]
+    }
+  }
+  return(list(Alice, Bob))
+}

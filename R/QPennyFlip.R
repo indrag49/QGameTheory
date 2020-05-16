@@ -1,0 +1,67 @@
+##############################################################################
+#                                                                            #
+#                      QUANTUM PENNY FLIP GAME                               #
+#                                                                            #
+##############################################################################
+
+#' @title
+#' Quantum Penny Flip game
+#'
+#' @description
+#' This function simulates the Quantum Penny Flip game by taking in the initial state of the game that is set by Alice and the strategies available to Alice and Bob. It returns the final state of the game along with the probability distribution of the qubits after measurement of the final state.
+#'
+#' @params
+#' initial_state, strategies_Alice, strategies_Bob
+#'
+#' @usage
+#' QPennyFlip(initial_state, strategies_Alice, strategies_Bob)
+#'
+#' @keywords
+#' Quantum Game Theory, Penny Flip Game
+#'
+#' @references
+#' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
+#' \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
+#' \url{https://arxiv.org/pdf/quant-ph/9804010.pdf}\cr
+#'
+#'
+#' @examples
+#' initialize_()
+#' psi <- (u+d)/sqrt(2)
+#' S1 <- sigmaX(I2)
+#' S2 <- I2
+#' H <- Hadamard(I2)
+#' SA <- list(S1, S2)
+#' SB <- list(H)
+#' QPennyFlip(psi, SA,SB)
+#'
+#' @export
+#'
+
+QPennyFlip <- function(initial_state, strategies_Alice, strategies_Bob){
+
+  l_Alice <- length(strategies_Alice)
+  l_Bob <- length(strategies_Bob)
+
+  # Alice prepares the initial state
+  Alice <- initial_state
+  state <- Alice
+
+  # Bob plays his move:
+  B <- sample(1:l_Bob, 1, replace=TRUE)
+  Bob <- strategies_Bob[[B]]
+  state <- Bob %*% state
+
+  # Alice plays again:
+  A <- sample(1:l_Alice, 1, replace=TRUE)
+  Alice <- strategies_Alice[[A]]
+  state <- Alice %*% state
+
+  # Last move by Bob:
+  B <- sample(1:l_Bob, 1, replace=TRUE)
+  Bob <- strategies_Bob[[B]]
+  state <- Bob %*% state
+
+  QMeasure(state)
+  return(state)
+}

@@ -1,0 +1,47 @@
+##############################################################################
+#                                                                            #
+#          PAYOFF MATRIX FOR THE QUANTUM BATTLE OF THE SEXES GAME            #
+#                                                                            #
+##############################################################################
+
+#' @title
+#' Quantum Battle of the Sexes game: Payoff Matrix
+#'
+#' @description
+#' This function generates the payoff matrix for the Quantum Battle of Sexes game for all the four combinations of 'p' and 'q'. 'moves' is a list of two possible strategies for each of the players and {'alpha', 'beta', 'gamma'} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, 'alpha'>'beta'>'gamma'.
+#'
+#' @params
+#' moves, alpha, beta, gamma
+#'
+#' @usage
+#' PayoffMatrix_QBOS(moves, alpha, beta, gamma)
+#'
+#' @keywords
+#' Quantum Game Theory, Battle of the Sexes
+#'
+#' @references
+#' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
+#' \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
+#' \url{https://arxiv.org/abs/quant-ph/0110096}\cr
+#'
+#'
+#' @examples
+#' initialize_()
+#' moves <- list(I2, sigmaX(I2))
+#' PayoffMatrix_QBOS(moves, 5, 3, 1)
+#'
+#' @export
+#'
+
+PayoffMatrix_QBOS <- function(moves, alpha, beta, gamma){
+  Alice <- matrix(0, 2, 2)
+  Bob <- matrix(0, 2, 2)
+  for(i in 1:2){
+    for (j in 1:2){
+      X <- QBOS(i-1, j-1, moves, alpha, beta, gamma)
+      Alice[i, j] <- X[[1]]
+      Bob[i, j] <- X[[2]]
+    }
+  }
+  return(list(Alice, Bob))
+}
