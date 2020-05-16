@@ -41,5 +41,5 @@ QNewcomb <- function(Omega, probability){
   sigma_x <- sigmaX(I2)
   Psif <- kronecker(H, I2) %*% (probability*kronecker(sigma_x, I2) + (1-probability)*kronecker(I2, I2)) %*% kronecker(H, I2) %*% Psi_in
   QMeasure(Psif)
-  retrun(Psif)
+  return(Psif)
 }
