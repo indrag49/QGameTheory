@@ -7,7 +7,7 @@
 levi_civita(i, j, k)
 }
 \description{
-This function computes the Levi-Civita symbol depending on the permutations of the three inputs, lying in \link{0,2}
+This function computes the Levi-Civita symbol depending on the permutations of the three inputs, lying in 0 to 2
 }
 \examples{
 initialize_()

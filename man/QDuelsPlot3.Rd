@@ -8,7 +8,7 @@ QDuelsPlot3(Psi, alpha1, alpha2)
 }
 \description{
 This function helps us to plot the improvement in Alice's expected payoff as a function of 'a' and 'b', if Alice chooses to fire at the air in her second shot, in a two round game. Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' is the probability of Alice missing the target, 'b' is the probability of Bob missing the target, and
-{'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in \link{-pi, pi} that control the outcome of a poorly performing player.
+{'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player.
 }
 \examples{
 initialize_()

@@ -13,7 +13,7 @@ This function returns the expected payoff to Alice for three possible cases for 
 \item The game is continued for 2 rounds and Alice shoots at the air in her second round.
 \item The game is continued for 2 rounds and Bob shoots at the air in her second round.
 Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' is the probability of Alice missing the target, 'b' is the probability of Bob missing the target, and
-{'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in \link{-pi, pi} that control the outcome of a poorly performing player.
+{'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player.
 }
 }
 \examples{
