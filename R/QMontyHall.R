@@ -14,7 +14,7 @@
 #' Psi_in, gamma, Ahat, Bhat
 #'
 #' @usage
-#' QNewcomb(Psi_in, gamma, Ahat, Bhat)
+#' QMontyHall(Psi_in, gamma, Ahat, Bhat)
 #'
 #' @keywords
 #' Quantum Game Theory, Monty Hall Problem

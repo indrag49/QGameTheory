@@ -45,7 +45,7 @@
 #' barplot
 #' persp
 #' plot
-#' 
+#'
 #' @export
 #'
 

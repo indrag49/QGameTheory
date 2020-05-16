@@ -4,7 +4,7 @@
 \alias{QMontyHall}
 \title{Quantum Monty Hall Problem}
 \usage{
-QNewcomb(Psi_in, gamma, Ahat, Bhat)
+QMontyHall(Psi_in, gamma, Ahat, Bhat)
 }
 \description{
 This function simulates the quantum version of the Monty Hall problem, by taking in 'Psi_in' as the initial quantum state of the game, 'gamma' lying in 0 to pi/2, Ahat and Bhat as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.

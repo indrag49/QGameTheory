@@ -15,7 +15,7 @@
 #' U_Alice, U_Bob, w, x, y, z
 #'
 #' @usage
-#' PayoffMatrix_QPD(U_Alice, U_Bob, w, x, y, z)
+#' QPD(U_Alice, U_Bob, w, x, y, z)
 #'
 #' @keywords
 #' Quantum Game Theory, Prisoner's Dilemma
