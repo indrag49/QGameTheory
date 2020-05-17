@@ -6,11 +6,14 @@
 \usage{
 T(n)
 }
+\arguments{
+\item{n}{a vector/matrix}
+}
 \description{
 This function operates the T gate on a conformable input matrix.
 }
 \examples{
-initialize_()
+init()
 T(I2)
 T(Q_minus)
 
@@ -19,8 +22,3 @@ T(Q_minus)
 \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
 \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

@@ -15,14 +15,17 @@
 #' Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' is the probability of Alice missing the target, 'b' is the probability of Bob missing the target, and
 #' {'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player
 #'
-#' @params
-#' Psi, n, a, b, alpha1, alpha2, beta1, beta2
+#' @param Psi a vector representing the initial quantum state
+#' @param n an integer
+#' @param a a number
+#' @param b a number
+#' @param alpha1 a number
+#' @param alpha2 a number
+#' @param beta1 a number
+#' @param beta2 a number
 #'
 #' @usage
 #' QDuels_Bob_payoffs(Psi, n, a, b, alpha1, alpha2, beta1, beta2)
-#'
-#' @keywords
-#' Quantum Game Theory, Two Person Duel
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
@@ -31,7 +34,7 @@
 #'
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' QDuels_Bob_payoffs(Q11, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
 #' Qs <- (Q0+Q1)/sqrt(2)
 #' Psi <- kronecker(Qs, Qs)
@@ -41,5 +44,6 @@
 #'
 
 QDuels_Bob_payoffs <- function(Psi, n, a, b, alpha1, alpha2, beta1, beta2){
+  Psi <- as.vector(Psi)
   return(1 - QDuels_Alice_payoffs(Psi, n, a, b, alpha1, alpha2, beta1, beta2))
 }

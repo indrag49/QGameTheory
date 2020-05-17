@@ -6,11 +6,18 @@
 \usage{
 QPennyFlip(initial_state, strategies_Alice, strategies_Bob)
 }
+\arguments{
+\item{initial_state}{a vector representing the initial quantum state}
+
+\item{strategies_Alice}{a matrix lying in SU(2)}
+
+\item{strategies_Bob}{a matrix lying in SU(2)}
+}
 \description{
 This function simulates the Quantum Penny Flip game by taking in the initial state of the game that is set by Alice and the strategies available to Alice and Bob. It returns the final state of the game along with the probability distribution of the qubits after measurement of the final state.
 }
 \examples{
-initialize_()
+init()
 psi <- (u+d)/sqrt(2)
 S1 <- sigmaX(I2)
 S2 <- I2
@@ -25,8 +32,3 @@ QPennyFlip(psi, SA,SB)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/9804010.pdf}\cr
 }
-\keyword{Flip}
-\keyword{Game}
-\keyword{Penny}
-\keyword{Quantum}
-\keyword{Theory,}

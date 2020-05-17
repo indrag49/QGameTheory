@@ -10,21 +10,17 @@
 #' @description
 #' This function operates the CNOT gate on a conformable input matrix
 #'
-#' @params
-#' n
+#' @param n A vector/matrix
 #'
 #' @usage
 #' CNOT(n)
-#'
-#' @keywords
-#' Quantum operations, quantum logic gates
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
 #' \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' CNOT(I4)
 #' CNOT(Q11)
 #'

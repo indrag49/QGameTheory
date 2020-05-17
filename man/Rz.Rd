@@ -6,11 +6,16 @@
 \usage{
 Rz(n, theta)
 }
+\arguments{
+\item{n}{a vector/matrix}
+
+\item{theta}{an angle}
+}
 \description{
 This function operates the Rotation gate about the z-axis of the Bloch sphere by an angle 'theta' on a conformable input matrix 'n'.
 }
 \examples{
-initialize_()
+init()
 Rz(Q1, pi)
 
 }
@@ -19,8 +24,3 @@ Rz(Q1, pi)
 \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 \url{http://www.physics.udel.edu/~msafrono/650/Lecture\%204\%20-\%205.pdf}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

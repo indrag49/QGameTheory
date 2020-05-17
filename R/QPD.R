@@ -11,14 +11,15 @@
 #' This function returns the expected payoffs to Alice and Bob, with the strategy moves by Alice and Bob as two of the inputs. {w, x, y, z} are the payoffs to the players corresponding to the choices available to them with the chain of inequalities, z>w>x>y.
 #' This function also plots the probability distribution plots of the qubits for one of all the combinations of the strategies of the players.
 #'
-#' @params
-#' U_Alice, U_Bob, w, x, y, z
+#' @param U_Alice a matrix lying in SU(2)
+#' @param U_Bob a matrix lying in SU(2)
+#' @param w a number
+#' @param x a number
+#' @param y a number
+#' @param z a number
 #'
 #' @usage
 #' QPD(U_Alice, U_Bob, w, x, y, z)
-#'
-#' @keywords
-#' Quantum Game Theory, Prisoner's Dilemma
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
@@ -27,7 +28,7 @@
 #'
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
 #'
 #' @export

@@ -10,14 +10,12 @@
 #' @description
 #' This function simulates the Quantum Penny Flip game by taking in the initial state of the game that is set by Alice and the strategies available to Alice and Bob. It returns the final state of the game along with the probability distribution of the qubits after measurement of the final state.
 #'
-#' @params
-#' initial_state, strategies_Alice, strategies_Bob
+#' @param initial_state a vector representing the initial quantum state
+#' @param strategies_Alice a matrix lying in SU(2)
+#' @param strategies_Bob a matrix lying in SU(2)
 #'
 #' @usage
 #' QPennyFlip(initial_state, strategies_Alice, strategies_Bob)
-#'
-#' @keywords
-#' Quantum Game Theory, Penny Flip Game
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
@@ -26,7 +24,7 @@
 #'
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' psi <- (u+d)/sqrt(2)
 #' S1 <- sigmaX(I2)
 #' S2 <- I2

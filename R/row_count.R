@@ -10,17 +10,13 @@
 #' @description
 #' This function counts the number of rows of a vector or a matrix
 #'
-#' @params
-#' M
+#' @param M a vector/matrix
 #'
 #' @usage
 #' row_count(M)
 #'
-#' @keywords
-#' Vector, Matrix
-#'
 #' @examples
-#' initialize_()
+#' init()
 #' row_count(Q01)
 #' row_count(lambda5)
 #' row_count(Qt12)

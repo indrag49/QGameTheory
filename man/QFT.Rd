@@ -6,11 +6,14 @@
 \usage{
 QFT(y)
 }
+\arguments{
+\item{y}{an integer}
+}
 \description{
 This function performs Quantum Fourier Transform for a given state |y>.
 }
 \examples{
-initialize_()
+init()
 QFT(5)
 
 }
@@ -19,7 +22,3 @@ QFT(5)
 \url{https://books.google.co.in/books?id=66TgFp2YqrAC&pg=PA25&redir_esc=y}\cr
 \url{https://en.wikipedia.org/wiki/Quantum_Fourier_transform}\cr
 }
-\keyword{Computation,}
-\keyword{Fourier}
-\keyword{Quantum}
-\keyword{Transform}

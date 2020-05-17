@@ -6,11 +6,20 @@
 \usage{
 QMontyHall(Psi_in, gamma, Ahat, Bhat)
 }
+\arguments{
+\item{Psi_in}{a vector representing the initial quantum state}
+
+\item{gamma}{a number between 0 and pi/2 including the end points}
+
+\item{Ahat}{a matrix lying in SU(3)}
+
+\item{Bhat}{a matrix lying in SU(3)}
+}
 \description{
 This function simulates the quantum version of the Monty Hall problem, by taking in 'Psi_in' as the initial quantum state of the game, 'gamma' lying in 0 to pi/2, Ahat and Bhat as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.
 }
 \examples{
-initialize_()
+init()
 Psi_in <- kronecker(Qt0, (Qt00+Qt11+Qt22)/sqrt(3))
 QMontyHall(Psi_in, pi/4, Identity3, Hhat)
 
@@ -20,9 +29,3 @@ QMontyHall(Psi_in, pi/4, Identity3, Hhat)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0109035.pdf}\cr
 }
-\keyword{Game}
-\keyword{Hall}
-\keyword{Monty}
-\keyword{Problem}
-\keyword{Quantum}
-\keyword{Theory,}

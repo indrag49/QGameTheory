@@ -6,11 +6,20 @@
 \usage{
 PayoffMatrix_QBOS(moves, alpha, beta, gamma)
 }
+\arguments{
+\item{moves}{a list of matrices}
+
+\item{alpha}{a number}
+
+\item{beta}{a number}
+
+\item{gamma}{a number}
+}
 \description{
 This function generates the payoff matrix for the Quantum Battle of Sexes game for all the four combinations of 'p' and 'q'. 'moves' is a list of two possible strategies for each of the players and {'alpha', 'beta', 'gamma'} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, 'alpha'>'beta'>'gamma'.
 }
 \examples{
-initialize_()
+init()
 moves <- list(I2, sigmaX(I2))
 PayoffMatrix_QBOS(moves, 5, 3, 1)
 
@@ -20,10 +29,3 @@ PayoffMatrix_QBOS(moves, 5, 3, 1)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/abs/quant-ph/0110096}\cr
 }
-\keyword{Battle}
-\keyword{Game}
-\keyword{Quantum}
-\keyword{Sexes}
-\keyword{Theory,}
-\keyword{of}
-\keyword{the}

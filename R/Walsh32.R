@@ -10,14 +10,10 @@
 #' @description
 #' This function operates the Walsh-32 gate on a conformable input matrix.
 #'
-#' @params
-#' n
+#' @param n a vector/matrix
 #'
 #' @usage
 #' Walsh32(n)
-#'
-#' @keywords
-#' Quantum operations, quantum logic gates
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
@@ -26,7 +22,7 @@
 #' \url{https://en.wikipedia.org/wiki/Hadamard_transform}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' Walsh32(I32)
 #' Walsh32(Q10011)
 #'

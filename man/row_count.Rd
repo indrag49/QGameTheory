@@ -6,15 +6,16 @@
 \usage{
 row_count(M)
 }
+\arguments{
+\item{M}{a vector/matrix}
+}
 \description{
 This function counts the number of rows of a vector or a matrix
 }
 \examples{
-initialize_()
+init()
 row_count(Q01)
 row_count(lambda5)
 row_count(Qt12)
 
 }
-\keyword{Matrix}
-\keyword{Vector,}

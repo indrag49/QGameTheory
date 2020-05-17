@@ -6,11 +6,14 @@
 \usage{
 Fredkin(n)
 }
+\arguments{
+\item{n}{A vector/matrix}
+}
 \description{
 This function operates the Fredkin gate on a conformable input matrix
 }
 \examples{
-initialize_()
+init()
 Fredkin(I8)
 Fredkin(Q110)
 
@@ -19,8 +22,3 @@ Fredkin(Q110)
 \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
 \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

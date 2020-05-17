@@ -6,11 +6,24 @@
 \usage{
 QBOS(p, q, moves, alpha, beta, gamma)
 }
+\arguments{
+\item{p}{a real number between 0 and 1 including the end points}
+
+\item{q}{a real number between 0 and 1 including the end points}
+
+\item{moves}{alist of matrices}
+
+\item{alpha}{a number}
+
+\item{beta}{a number}
+
+\item{gamma}{a number}
+}
 \description{
 This function returns the expected payoffs to Alice and Bob with respect to the probabilities 'p' and 'q'. p+q should equal 1 and 'moves' is a list of two possible strategies for each of the players and {'alpha', 'beta', 'gamma'} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, 'alpha'>'beta'>'gamma'.
 }
 \examples{
-initialize_()
+init()
 moves <- list(I2, sigmaX(I2))
 QBOS(0, 1, moves, 5, 3, 1)
 QBOS(1, 1, moves, 5, 3, 1)
@@ -22,10 +35,3 @@ QBOS(0.5, 0.5, moves, 5, 3, 1)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/abs/quant-ph/0110096}\cr
 }
-\keyword{Battle}
-\keyword{Game}
-\keyword{Quantum}
-\keyword{Sexes}
-\keyword{Theory,}
-\keyword{of}
-\keyword{the}

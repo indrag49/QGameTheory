@@ -6,11 +6,18 @@
 \usage{
 levi_civita(i, j, k)
 }
+\arguments{
+\item{i}{an integer 0, 1 or 2}
+
+\item{j}{an integer 0, 1 or 2}
+
+\item{k}{an integer 0, 1 or 2}
+}
 \description{
 This function computes the Levi-Civita symbol depending on the permutations of the three inputs, lying in 0 to 2
 }
 \examples{
-initialize_()
+init()
 levi_civita(0, 2, 1)
 levi_civita(1, 2, 0)
 levi_civita(1, 2, 1)
@@ -19,7 +26,3 @@ levi_civita(1, 2, 1)
 \references{
 \url{https://en.wikipedia.org/wiki/Levi-Civita_symbol}\cr
 }
-\keyword{Linear}
-\keyword{algebra,}
-\keyword{analysis}
-\keyword{tensor}

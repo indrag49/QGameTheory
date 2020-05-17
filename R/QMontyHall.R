@@ -10,14 +10,13 @@
 #' @description
 #' This function simulates the quantum version of the Monty Hall problem, by taking in 'Psi_in' as the initial quantum state of the game, 'gamma' lying in 0 to pi/2, Ahat and Bhat as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.
 #'
-#' @params
-#' Psi_in, gamma, Ahat, Bhat
+#' @param Psi_in a vector representing the initial quantum state
+#' @param gamma a number between 0 and pi/2 including the end points
+#' @param Ahat a matrix lying in SU(3)
+#' @param Bhat a matrix lying in SU(3)
 #'
 #' @usage
 #' QMontyHall(Psi_in, gamma, Ahat, Bhat)
-#'
-#' @keywords
-#' Quantum Game Theory, Monty Hall Problem
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
@@ -25,7 +24,7 @@
 #' \url{https://arxiv.org/pdf/quant-ph/0109035.pdf}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' Psi_in <- kronecker(Qt0, (Qt00+Qt11+Qt22)/sqrt(3))
 #' QMontyHall(Psi_in, pi/4, Identity3, Hhat)
 #'
@@ -42,8 +41,8 @@ QMontyHall <- function(Psi_in, gamma, Ahat, Bhat){
       for (k in 0:2){
         for(l in 0:2){
           n <- (i + l) %% 3
-          a <- as.vector(t(as.vector(t(Dict3[[n+1]] %o% Dict3[[j+1]])) %o% Dict3[[k+1]]))
-          b <- t(Conj(as.vector(t(as.vector(t(Dict3[[l+1]] %o% Dict3[[j+1]])) %o% Dict3[[k+1]]))))
+          a <- kronecker(kronecker(Dict3[[n+1]], Dict3[[j+1]]), Dict3[[k+1]])
+          b <- t(Conj(kronecker(kronecker(Dict3[[l+1]], Dict3[[j+1]]),Dict3[[k+1]])))
           O1 <- O1 + abs(levi_civita(i, j, k))*kronecker(a, b)
         }
       }
@@ -53,8 +52,8 @@ QMontyHall <- function(Psi_in, gamma, Ahat, Bhat){
   for (j in 0:2){
     for (l in 0:2){
       m <- (j+l+1)%%3
-      a <- as.vector(t(as.vector(t(Dict3[[m+1]] %o% Dict3[[j+1]])) %o% Dict3[[j+1]]))
-      b <- t(Conj(as.vector(t(as.vector(t(Dict3[[l+1]] %o% Dict3[[j+1]])) %o% Dict3[[j+1]]))))
+      a <- kronecker(kronecker(Dict3[[m+1]], Dict3[[j+1]]), Dict3[[j+1]])
+      b <- t(Conj(kronecker(kronecker(Dict3[[l+1]], Dict3[[j+1]]), Dict3[[j+1]])))
       O2 <- O2 + kronecker(a, b)
     }
   }
@@ -67,8 +66,8 @@ QMontyHall <- function(Psi_in, gamma, Ahat, Bhat){
     for(k in 0:2){
       for (l in 0:2){
         for(l in 0:2){
-          a <- as.vector(t(as.vector(t(Dict3[[i+1]] %o% Dict3[[l+1]])) %o% Dict3[[k+1]]))
-          b <- t(Conj(as.vector(t(as.vector(t(Dict3[[i+1]] %o% Dict3[[j+1]])) %o% Dict3[[k+1]]))))
+          a <- kronecker(kronecker(Dict3[[i+1]], Dict3[[l+1]]), Dict3[[k+1]])
+          b <- t(Conj(kronecker(kronecker(Dict3[[i+1]], Dict3[[j+1]]), Dict3[[k+1]])))
           S1 <- S1 + abs(levi_civita(i, j, l))*kronecker(a, b)
         }
       }
@@ -77,7 +76,7 @@ QMontyHall <- function(Psi_in, gamma, Ahat, Bhat){
 
   for(i in 0:2){
     for(j in 0:2){
-      a <- as.vector(t(as.vector(t(Dict3[[i+1]] %o% Dict3[[i+1]])) %o% Dict3[[j+1]]))
+      a <- kronecker(kronecker(Dict3[[i+1]], Dict3[[i+1]]), Dict3[[j+1]])
       b <- t(Conj(a))
       S2 <- S2 + kronecker(a, b)
     }
@@ -92,7 +91,7 @@ QMontyHall <- function(Psi_in, gamma, Ahat, Bhat){
   Bob_expected_payoff <- 0
   for(i in 0:2){
     for(j in 0:2){
-      a <- t(Conj(as.vector(t(as.vector(t(Dict3[[i+1]] %o% Dict3[[j+1]])) %o% Dict3[[j+1]]))))
+      a <- t(Conj(kronecker(kronecker(Dict3[[i+1]], Dict3[[j+1]]), Dict3[[j+1]])))
       Bob_expected_payoff <- Bob_expected_payoff + abs(a %*% Psif)**2
     }
   }

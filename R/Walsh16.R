@@ -10,14 +10,10 @@
 #' @description
 #' This function operates the Walsh-16 gate on a conformable input matrix.
 #'
-#' @params
-#' n
+#' @param n a vector/matrix
 #'
 #' @usage
 #' Walsh16(n)
-#'
-#' @keywords
-#' Quantum operations, quantum logic gates
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
@@ -26,7 +22,7 @@
 #' \url{https://en.wikipedia.org/wiki/Hadamard_transform}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' Walsh16(I16)
 #' Walsh16(Q1001)
 #'

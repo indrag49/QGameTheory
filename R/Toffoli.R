@@ -10,21 +10,17 @@
 #' @description
 #' This function operates the Toffoli gate on a conformable input matrix.
 #'
-#' @params
-#' n
+#' @param n a vector/matrix
 #'
 #' @usage
 #' Toffoli(n)
-#'
-#' @keywords
-#' Quantum operations, quantum logic gates
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
 #' \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' Toffoli(I8)
 #' Toffoli(Q010)
 #'

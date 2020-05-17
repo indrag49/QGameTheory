@@ -10,14 +10,10 @@
 #' @description
 #' This function performs a projective measurement of a quantum state 'n', in the computational basis and plots the corresponding probability distributions of the qubits.
 #'
-#' @params
-#' n
+#' @param n a vector representing a quantum state
 #'
 #' @usage
 #' QMeasure(n)
-#'
-#' @keywords
-#' Quantum Computation, Measurement
 #'
 #' @references
 #' \url{https://books.google.co.in/books?id=66TgFp2YqrAC&pg=PA25&redir_esc=y}\cr
@@ -25,7 +21,7 @@
 #'
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' QMeasure(Q11010001)
 #'
 #' @export

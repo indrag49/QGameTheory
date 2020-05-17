@@ -10,21 +10,18 @@
 #' @description
 #' This function finds out the Nash equilibria of the 2-D payoff matrix for the players. The input parameters are equal dimensional payoff matrices for the first and the second players.
 #'
-#' @params
-#' P1, P2
+#' @param P1 Payoff matrix to Alice
+#' @param P2 Payoff matrix to Bob
 #'
 #' @usage
 #' NASH(P1, P2)
-#'
-#' @keywords
-#' Game Theory, strategy equilibrium, strict dominance
 #'
 #' @references
 #' \url{https://arxiv.org/abs/1512.06808}\cr
 #' \url{https://en.wikipedia.org/wiki/Nash_equilibrium}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' Alice <- matrix(c(4, 3, 2, 4, 4, 2, 1, 0, 3, 5, 3, 5, 2, 3, 1, 3), ncol=4, byrow=TRUE)
 #' Bob <- matrix(c(0, 2, 3, 8, 2, 1, 2, 2, 6, 5, 1, 0, 3, 2, 2, 3), ncol=4, byrow=TRUE)
 #' NASH(Alice, Bob)

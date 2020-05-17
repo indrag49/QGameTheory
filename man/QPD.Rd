@@ -6,12 +6,25 @@
 \usage{
 QPD(U_Alice, U_Bob, w, x, y, z)
 }
+\arguments{
+\item{U_Alice}{a matrix lying in SU(2)}
+
+\item{U_Bob}{a matrix lying in SU(2)}
+
+\item{w}{a number}
+
+\item{x}{a number}
+
+\item{y}{a number}
+
+\item{z}{a number}
+}
 \description{
 This function returns the expected payoffs to Alice and Bob, with the strategy moves by Alice and Bob as two of the inputs. {w, x, y, z} are the payoffs to the players corresponding to the choices available to them with the chain of inequalities, z>w>x>y.
 This function also plots the probability distribution plots of the qubits for one of all the combinations of the strategies of the players.
 }
 \examples{
-initialize_()
+init()
 QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
 
 }
@@ -20,8 +33,3 @@ QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0004076.pdf}\cr
 }
-\keyword{Dilemma}
-\keyword{Game}
-\keyword{Prisoner's}
-\keyword{Quantum}
-\keyword{Theory,}

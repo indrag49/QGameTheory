@@ -6,11 +6,14 @@
 \usage{
 sigmaY(n)
 }
+\arguments{
+\item{n}{a vector/matrix}
+}
 \description{
 This function operates the Pauli-X gate on a conformable input matrix.
 }
 \examples{
-initialize_()
+init()
 sigmaY(I2)
 sigmaY(Hadamard(I2))
 sigmaY(Q0)
@@ -21,8 +24,3 @@ sigmaY(Q0)
 \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 \url{http://www.physics.udel.edu/~msafrono/650/Lecture\%204\%20-\%205.pdf}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

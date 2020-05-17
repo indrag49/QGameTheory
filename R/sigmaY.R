@@ -10,14 +10,10 @@
 #' @description
 #' This function operates the Pauli-X gate on a conformable input matrix.
 #'
-#' @params
-#' n
+#' @param n a vector/matrix
 #'
 #' @usage
 #' sigmaY(n)
-#'
-#' @keywords
-#' Quantum operations, quantum logic gates
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
@@ -25,7 +21,7 @@
 #' \url{http://www.physics.udel.edu/~msafrono/650/Lecture%204%20-%205.pdf}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' sigmaY(I2)
 #' sigmaY(Hadamard(I2))
 #' sigmaY(Q0)

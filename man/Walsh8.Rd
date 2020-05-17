@@ -6,11 +6,14 @@
 \usage{
 Walsh8(n)
 }
+\arguments{
+\item{n}{a vector/matrix}
+}
 \description{
 This function operates the Walsh-8 gate on a conformable input matrix.
 }
 \examples{
-initialize_()
+init()
 Walsh8(I8)
 Walsh8(Q000)
 
@@ -21,8 +24,3 @@ Walsh8(Q000)
 \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
 \url{https://en.wikipedia.org/wiki/Hadamard_transform}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

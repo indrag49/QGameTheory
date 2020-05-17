@@ -6,11 +6,16 @@
 \usage{
 QNewcomb(Omega, probability)
 }
+\arguments{
+\item{Omega}{|0> or |1>}
+
+\item{probability}{a real number between 0 and 1 including the end points}
+}
 \description{
 This function simulates the quantum version of the Newcomb's Paradox by taking in the choice of the qubit |0> or |1> by the supercomputer 'Omega' and the probability 'probability' with which Alice plays the spin flip operator. It returns the final state of the quantum game along with plotting the probability densities of the qubits of the final state after measurement.
 }
 \examples{
-initialize_()
+init()
 QNewcomb(Q0, 0)
 QNewcomb(Q1, 0)
 QNewcomb(Q1, 0.7)
@@ -21,8 +26,3 @@ QNewcomb(Q1, 0.7)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0202074.pdf}\cr
 }
-\keyword{Game}
-\keyword{Newcomb's}
-\keyword{Paradox}
-\keyword{Quantum}
-\keyword{Theory,}

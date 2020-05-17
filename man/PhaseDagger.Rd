@@ -6,11 +6,14 @@
 \usage{
 PhaseDagger(n)
 }
+\arguments{
+\item{n}{a vector/matrix}
+}
 \description{
 This function operates the hermitian transpose of the Phase gate on a conformable input matrix
 }
 \examples{
-initialize_()
+init()
 Conj(t(Phase(I2)))==PhaseDagger(I2)
 PhaseDagger(Q_plus)
 
@@ -19,8 +22,3 @@ PhaseDagger(Q_plus)
 \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
 \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

@@ -6,12 +6,19 @@
 \usage{
 QDuelsPlot4(Psi, alpha1, alpha2)
 }
+\arguments{
+\item{Psi}{a vector representing the initial quantum state}
+
+\item{alpha1}{a number}
+
+\item{alpha2}{a number}
+}
 \description{
 This function helps us to plot the improvement in Bob's expected payoff as a function of 'a' and 'b', if Bob chooses to fire at the air in her second shot, in a two round game. Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' is the probability of Alice missing the target, 'b' is the probability of Bob missing the target, and
 {'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player.
 }
 \examples{
-initialize_()
+init()
 Qs <- (Q0+Q1)/sqrt(2)
 Psi <- kronecker(Q1, Qs)
 QDuelsPlot4(Psi, pi/3, pi/6)
@@ -22,9 +29,3 @@ QDuelsPlot4(Psi, pi/3, pi/6)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0305058.pdf}\cr
 }
-\keyword{Duel}
-\keyword{Game}
-\keyword{Person}
-\keyword{Quantum}
-\keyword{Theory,}
-\keyword{Two}

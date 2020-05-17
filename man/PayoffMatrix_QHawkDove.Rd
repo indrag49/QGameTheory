@@ -6,11 +6,20 @@
 \usage{
 PayoffMatrix_QHawkDove(moves, v, j, D)
 }
+\arguments{
+\item{moves}{a list of matrices}
+
+\item{v}{a number}
+
+\item{j}{a number}
+
+\item{D}{a number}
+}
 \description{
 This function generates the payoff matrix for the Quantum Hawk and Dove game for all the four combinations of 'p' and 'q'. 'moves' is a list of two possible strategies for each of the players and {v, j, D} are the value of resource, cost of injury and cost of displaying.
 }
 \examples{
-initialize_()
+init()
 moves <- list(I2, sigmaX(I2))
 PayoffMatrix_QHawkDove(moves, 50, -100, -10)
 
@@ -20,9 +29,3 @@ PayoffMatrix_QHawkDove(moves, 50, -100, -10)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0108075.pdf}\cr
 }
-\keyword{Dove}
-\keyword{Game}
-\keyword{Hawk}
-\keyword{Quantum}
-\keyword{Theory,}
-\keyword{and}

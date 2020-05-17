@@ -6,11 +6,14 @@
 \usage{
 Hadamard(n)
 }
+\arguments{
+\item{n}{A vector/matrix}
+}
 \description{
 This function operates the Hadamard gate on a conformable input matrix
 }
 \examples{
-initialize_()
+init()
 Hadamard(Q0)
 Hadamard(I2)
 Hadamard(Hadamard(Q1))
@@ -20,8 +23,3 @@ Hadamard(Hadamard(Q1))
 \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
 \url{http://www2.optics.rochester.edu/~stroud/presentations/muthukrishnan991/LogicGates.pdf}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

@@ -6,6 +6,23 @@
 \usage{
 QDuels_Alice_payoffs(Psi, n, a, b, alpha1, alpha2, beta1, beta2)
 }
+\arguments{
+\item{Psi}{a vector representing the initial quantum state}
+
+\item{n}{an integer}
+
+\item{a}{a number}
+
+\item{b}{a number}
+
+\item{alpha1}{a number}
+
+\item{alpha2}{a number}
+
+\item{beta1}{a number}
+
+\item{beta2}{a number}
+}
 \description{
 This function returns the expected payoff to Alice for three possible cases for the Quantum Duel game:
 \enumerate{
@@ -17,7 +34,7 @@ Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' i
 }
 }
 \examples{
-initialize_()
+init()
 QDuels_Alice_payoffs(Q11, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
 Qs <- (Q0+Q1)/sqrt(2)
 Psi <- kronecker(Qs, Qs)
@@ -29,9 +46,3 @@ QDuels_Alice_payoffs(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0305058.pdf}\cr
 }
-\keyword{Duel}
-\keyword{Game}
-\keyword{Person}
-\keyword{Quantum}
-\keyword{Theory,}
-\keyword{Two}

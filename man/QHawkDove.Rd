@@ -6,11 +6,24 @@
 \usage{
 QHawkDove(p, q, moves, v, j, D)
 }
+\arguments{
+\item{p}{a real number between 0 and 1 including the end points}
+
+\item{q}{a real number between 0 and 1 including the end points}
+
+\item{moves}{a list of matrics}
+
+\item{v}{a number}
+
+\item{j}{a number}
+
+\item{D}{a number}
+}
 \description{
 This function returns the expected payoffs to Alice and Bob with respect to the probabilities 'p' and 'q'. p+q should equal 1 and 'moves' is a list of two possible strategies for each of the players and {v, j, D} are the value of resource, cost of injury and cost of displaying.
 }
 \examples{
-initialize_()
+init()
 moves <- list(I2, sigmaX(I2))
 QHawkDove(0, 1, moves, 50, -100, -10)
 QHawkDove(0, 0, moves, 50, -100, -10)
@@ -21,9 +34,3 @@ QHawkDove(0, 0, moves, 50, -100, -10)
 \url{https://arxiv.org/pdf/quant-ph/0208069.pdf}\cr
 \url{https://arxiv.org/pdf/quant-ph/0108075.pdf}\cr
 }
-\keyword{Dove}
-\keyword{Game}
-\keyword{Hawk}
-\keyword{Quantum}
-\keyword{Theory,}
-\keyword{and}

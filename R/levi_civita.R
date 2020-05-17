@@ -10,20 +10,18 @@
 #' @description
 #' This function computes the Levi-Civita symbol depending on the permutations of the three inputs, lying in 0 to 2
 #'
-#' @params
-#' i, j, k
+#' @param i an integer 0, 1 or 2
+#' @param j an integer 0, 1 or 2
+#' @param k an integer 0, 1 or 2
 #'
 #' @usage
 #' levi_civita(i, j, k)
-#'
-#' @keywords
-#' Linear algebra, tensor analysis
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Levi-Civita_symbol}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' levi_civita(0, 2, 1)
 #' levi_civita(1, 2, 0)
 #' levi_civita(1, 2, 1)

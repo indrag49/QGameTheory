@@ -6,22 +6,23 @@
 \usage{
 Bell(qubit1, qubit2)
 }
+\arguments{
+\item{qubit1}{1st input qubit}
+
+\item{qubit2}{2nd input qubit}
+}
 \description{
 The function builds one of the four Bell states, according to the input qubits
 }
 \examples{
-initialize_()
-Bell(0, 0)
-Bell(0, 1)
-Bell(1, 0)
-Bell(1, 1)
+init()
+Bell(Q0, Q0)
+Bell(Q0, Q1)
+Bell(Q1, Q0)
+Bell(Q1, Q1)
 
 }
 \references{
 \url{https://en.wikipedia.org/wiki/Bell_state}\cr
 \url{https://books.google.co.in/books?id=66TgFp2YqrAC&pg=PA25&redir_esc=y}\cr
 }
-\keyword{Bell}
-\keyword{Quantum}
-\keyword{basis}
-\keyword{entanglement,}

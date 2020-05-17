@@ -10,14 +10,15 @@
 #' @description
 #' This function returns the expected payoffs to Alice and Bob with respect to the probabilities 'p' and 'q'. p+q should equal 1 and 'moves' is a list of two possible strategies for each of the players and {'alpha', 'beta', 'gamma'} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, 'alpha'>'beta'>'gamma'.
 #'
-#' @params
-#' p, q, moves, alpha, beta, gamma
+#' @param p a real number between 0 and 1 including the end points
+#' @param q a real number between 0 and 1 including the end points
+#' @param moves alist of matrices
+#' @param alpha a number
+#' @param beta a number
+#' @param gamma a number
 #'
 #' @usage
 #' QBOS(p, q, moves, alpha, beta, gamma)
-#'
-#' @keywords
-#' Quantum Game Theory, Battle of the Sexes
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
@@ -26,7 +27,7 @@
 #'
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' moves <- list(I2, sigmaX(I2))
 #' QBOS(0, 1, moves, 5, 3, 1)
 #' QBOS(1, 1, moves, 5, 3, 1)

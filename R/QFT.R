@@ -10,14 +10,10 @@
 #' @description
 #' This function performs Quantum Fourier Transform for a given state |y>.
 #'
-#' @params
-#' y
+#' @param y an integer
 #'
 #' @usage
 #' QFT(y)
-#'
-#' @keywords
-#' Quantum Computation, Fourier Transform
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
@@ -26,7 +22,7 @@
 #'
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' QFT(5)
 #'
 #' @export

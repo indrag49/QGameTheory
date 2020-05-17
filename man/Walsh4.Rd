@@ -6,11 +6,14 @@
 \usage{
 Walsh4(n)
 }
+\arguments{
+\item{n}{a vector/matrix}
+}
 \description{
 This function operates the Walsh-4 gate on a conformable input matrix.
 }
 \examples{
-initialize_()
+init()
 Walsh4(I4)
 Walsh4(Q10)
 
@@ -21,8 +24,3 @@ Walsh4(Q10)
 \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
 \url{https://en.wikipedia.org/wiki/Hadamard_transform}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

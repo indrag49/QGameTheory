@@ -10,21 +10,18 @@
 #' @description
 #' This function applies the IDSDS algorithm to result in the equilibrium strategies based on the rationaility of the players. The input parameters are equal dimensional payoff matrices for the first and the second players.
 #'
-#' @params
-#' P1, P2
+#' @param P1 Payoff matrix to Alice
+#' @param P2 Payoff matrix to Bob
 #'
 #' @usage
 #' IDSDS(P1, P2)
-#'
-#' @keywords
-#' Game Theory, strategy equilibrium, strict dominance
 #'
 #' @references
 #' \url{https://arxiv.org/abs/1512.06808}\cr
 #' \url{https://en.wikipedia.org/wiki/Strategic_dominance}\cr
 #'
 #' @examples
-#' initialize_()
+#' init()
 #' Alice <- matrix(c(8, 0, 3, 3, 2, 4, 2, 1, 3), ncol=3, byrow=TRUE)
 #' Bob <- matrix(c(6, 9, 8, 2, 1, 3, 8, 5, 1), ncol=3, byrow=TRUE)
 #' IDSDS(Alice, Bob)

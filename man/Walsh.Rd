@@ -6,11 +6,14 @@
 \usage{
 Walsh(n)
 }
+\arguments{
+\item{n}{a vector/matrix}
+}
 \description{
 This function operates the Walsh-Hadamard gate on a conformable input matrix.
 }
 \examples{
-initialize_()
+init()
 Walsh(I2)
 Walsh(Q0)
 
@@ -21,8 +24,3 @@ Walsh(Q0)
 \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr
 \url{https://en.wikipedia.org/wiki/Hadamard_transform}\cr
 }
-\keyword{Quantum}
-\keyword{gates}
-\keyword{logic}
-\keyword{operations,}
-\keyword{quantum}

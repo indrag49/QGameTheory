@@ -6,11 +6,14 @@
 \usage{
 QMeasure(n)
 }
+\arguments{
+\item{n}{a vector representing a quantum state}
+}
 \description{
 This function performs a projective measurement of a quantum state 'n', in the computational basis and plots the corresponding probability distributions of the qubits.
 }
 \examples{
-initialize_()
+init()
 QMeasure(Q11010001)
 
 }
@@ -18,6 +21,3 @@ QMeasure(Q11010001)
 \url{https://books.google.co.in/books?id=66TgFp2YqrAC&pg=PA25&redir_esc=y}\cr
 \url{https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics}\cr
 }
-\keyword{Computation,}
-\keyword{Measurement}
-\keyword{Quantum}
