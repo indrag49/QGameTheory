@@ -86,7 +86,7 @@ init <- function(){
     s1 <- substr(i, 1, l-1)
     s2 <- substr(i, l, l)
     r <- kronecker(Dict[[s1]], Dict[[s2]])
-    assign(s, r, envir=globalenv())
+    assign(s, r, envir=.GlobalEnv)
     Dict[[substr(s, 2, nchar(s))]] <- r
   }
   Dict <<- Dict
