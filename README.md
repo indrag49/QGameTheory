@@ -8,4 +8,14 @@ Description: General purpose toolbox for simulating quantum versions of game the
 
 ---
 
+## Installation
+
+The development version of the package can be installed from the github repository:
+
+```{r}
+install.packages("devtools")
+indrag49/QGameTheory
+```
+
+
 
