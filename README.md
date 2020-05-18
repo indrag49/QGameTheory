@@ -265,4 +265,4 @@ Finally for preparing and measuring an arbitrary quantum state,
 > QMeasure(Psi)
 ```
 
-<img src="man/figures/1.png" width="100px " alt=""/>
+<img src="man/figures/1.png" alt=""/>
