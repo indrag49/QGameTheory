@@ -7,7 +7,7 @@ Imports: dplyr,
          RColorBrewer,
          R.utils
 Depends: R(>= 3.4)
-Description: General purpose toolbox for simulating quantum versions of game theoretic models. Quantum versions of models that have been handled are: Penny Flip Game, Prisoner's Dilemma, Two Person Duel, Battle of the Sexes, Newcomb Paradox, Hawk and Dove Game and Monty Hall Problem.
+Description: General purpose toolbox for simulating quantum versions of game theoretic models. Quantum versions of models that have been handled are: Penny Flip Game, Prisoner's Dilemma, Two Person Duel, Battle of the Sexes, Hawk and Dove Game, Newcomb's Paradox and Monty Hall Problem.
 License: MIT + file LICENSE
 Encoding: UTF-8
 URL: https://github.com/indrag49/QGameTheory
