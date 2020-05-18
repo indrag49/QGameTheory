@@ -234,4 +234,20 @@ There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, 
 [1,] 0.8660254-0.5i
 [2,] 1.0000000+0.0i
 ```
+One can prepare on of the 4 Bell states by using:
 
+```{r}
+> Bell(Q0, Q1)
+          [,1]
+[1,] 0.0000000
+[2,] 0.7071068
+[3,] 0.7071068
+[4,] 0.0000000
+> Bell(Q1, Q1)
+           [,1]
+[1,]  0.0000000
+[2,]  0.7071068
+[3,] -0.7071068
+[4,]  0.0000000
+```
+Finally for measuring a quantum state \texttt{Psi}, 
