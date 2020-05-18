@@ -266,3 +266,5 @@ Finally for preparing and measuring an arbitrary quantum state,
 ```
 
 <img src="man/figures/1.png" alt=""/>
+
+## Game Theory Concepts
