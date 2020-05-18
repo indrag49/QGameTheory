@@ -137,6 +137,50 @@ This code chunk when run, produces:
 [63,]    1
 [64,]    0
 ```
+The identity matrix:
 
+```{r}
+> I2
+     [,1] [,2]
+[1,]    1    0
+[2,]    0    1
+```
+The Pauli-X, Pauli-Y and the Pauli-Z matrix:
+
+```{r}
+> sigmaX(I2)
+     [,1] [,2]
+[1,]    0    1
+[2,]    1    0
+> sigmaY(I2)
+     [,1] [,2]
+[1,] 0+0i 0-1i
+[2,] 0+1i 0+0i
+> sigmaZ(I2)
+     [,1] [,2]
+[1,]    1    0
+[2,]    0   -1
+```
+
+The Hadamard Gate:
+
+```{r}
+> Hadamard(I2)
+          [,1]       [,2]
+[1,] 0.7071068  0.7071068
+[2,] 0.7071068 -0.7071068
+```
+The application of Pauli-X gate on |0> and on |1>, i.e, the spin flip operations on qubits, can be simulated in the following way:
+
+```{r}
+> sigmaX(Q0)
+     [,1]
+[1,]    0
+[2,]    1
+> sigmaX(Q1)
+     [,1]
+[1,]    1
+[2,]    0
+```
 
 
