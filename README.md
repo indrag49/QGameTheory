@@ -26,7 +26,13 @@ library(dplyr)
 library(RColorBrewer)
 library(R.utils)
 ```
+## Global Variables
 
+The global variables that are required for the quantum game theoretic models, are built by initializing:
+
+```{r}
+init()
+```
 
 
 
