@@ -33,7 +33,11 @@ The global variables that are required for the quantum game theoretic models, ar
 ```{r}
 init()
 ```
+All the global parameters/variables are made visible by:
 
+```{r}
+ls()
+```
 
 
 
