@@ -250,4 +250,4 @@ One can prepare on of the 4 Bell states by using:
 [3,] -0.7071068
 [4,]  0.0000000
 ```
-Finally for measuring a quantum state \texttt{Psi}, 
+Finally for measuring a quantum state $$\texttt{Psi}$$, 
