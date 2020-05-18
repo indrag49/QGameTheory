@@ -14,8 +14,20 @@ The development version of the package can be installed from the github reposito
 
 ```{r}
 install.packages("devtools")
-indrag49/QGameTheory
+devtools::install_github("indrag49/QGameTheory")
 ```
+
+## Dependencies
+
+*QGameTheory* depends on three more packages:
+
+```{r}
+library(dplyr)
+library(RColorBrewer)
+library(R.utils)
+```
+
+
 
 
 
