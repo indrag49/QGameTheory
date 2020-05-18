@@ -13,8 +13,6 @@
 #' @usage
 #' init()
 #'
-#' @keywords
-#' Quantum Computing, Qubits, Qutrits, SU(2), SU(3), Basis States, superposition
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0512125.pdf}\cr
