@@ -26,12 +26,3 @@ lambda4
 \url{https://en.wikipedia.org/wiki/Qutrit}\cr
 \url{https://en.wikipedia.org/wiki/Clebsch\%E2\%80\%93Gordan_coefficients_for_SU(3)}\cr
 }
-\keyword{Basis}
-\keyword{Computing,}
-\keyword{Quantum}
-\keyword{Qubits,}
-\keyword{Qutrits,}
-\keyword{SU(2),}
-\keyword{SU(3),}
-\keyword{States,}
-\keyword{superposition}
