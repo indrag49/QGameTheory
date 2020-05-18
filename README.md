@@ -283,3 +283,15 @@ The **Iterated Deletion of Strictly Dominated Strategies** algorithm is simulate
      [,1]
 [1,]    3
 ```
+
+The **NASH** equilibrium of the payoff matrix of a two person game is computed similary in the following way:
+
+```{r}
+> NASH(P1, P2)
+Joining, by = c("V1", "V2")
+  V1 V2
+1  2  3
+```
+This generates the indices of the cell corresponding to the NASH equilibrium.
+
+## Quantum Game Theory Models
