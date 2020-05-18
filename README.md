@@ -250,4 +250,17 @@ One can prepare on of the 4 Bell states by using:
 [3,] -0.7071068
 [4,]  0.0000000
 ```
-Finally for measuring a quantum state $$\texttt{Psi}$$, 
+Finally for preparing and measuring an arbitrary quantum state,
+
+```{r}
+> sigma_x <- sigmaX(I2)
+> U <- (kronecker(I2, I2)+1i*kronecker(sigma_x, sigma_x))/sqrt(2)
+> Psi <- U %*% Q00
+> Psi
+                     [,1]
+[1,] 0.7071068+0.0000000i
+[2,] 0.0000000+0.0000000i
+[3,] 0.0000000+0.0000000i
+[4,] 0.0000000+0.7071068i
+> QMeasure(Psi)
+```
