@@ -268,3 +268,18 @@ Finally for preparing and measuring an arbitrary quantum state,
 <img src="man/figures/1.png" alt=""/>
 
 ## Game Theory Concepts
+
+The **Iterated Deletion of Strictly Dominated Strategies** algorithm is simulated by taking in the payoff matrices of two players from a two-person game:
+
+```{r}
+> P1 <- matrix(c(8, 0, 3, 3, 2, 4, 2, 1, 3), ncol=3, byrow=TRUE)
+> P2 <- matrix(c(6, 9, 8, 2, 1, 3, 8, 5, 1), ncol=3, byrow=TRUE)
+> IDSDS(P1, P2)
+[[1]]
+     [,1]
+[1,]    4
+
+[[2]]
+     [,1]
+[1,]    3
+```
