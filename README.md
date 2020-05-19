@@ -250,6 +250,22 @@ One can prepare on of the 4 Bell states by using:
 [3,] -0.7071068
 [4,]  0.0000000
 ```
+
+The **Quantum Fourier Transform** for a given state |y> is simulated by:
+
+```{r}
+> QFT(4)
+              [,1]
+[1,]  0.3535534+0i
+[2,] -0.3535534+0i
+[3,]  0.3535534-0i
+[4,] -0.3535534+0i
+[5,]  0.3535534-0i
+[6,] -0.3535534+0i
+[7,]  0.3535534-0i
+[8,] -0.3535534+0i
+```
+
 Finally for preparing and measuring an arbitrary quantum state,
 
 ```{r}
