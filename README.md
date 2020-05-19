@@ -389,3 +389,13 @@ Simulation is carried out to calculate the expected payoffs to Alice and Bob for
 
 Four plotting functions are available to simulate the corresponding results:
 
+1) For plotting Alice's and Bob's expected payoffs as functions of 'alpha1' and 'alpha2':
+
+```{r}
+QDuelsPlot1(Psi, 5, 0.66666, 0.5, 0.2, 0.7)
+```
+
+<p float="left">
+  <img src="man/figures/5.png" width="100" />
+  <img src="man/figures/6.png" width="100" /> 
+</p>
