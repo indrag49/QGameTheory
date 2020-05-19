@@ -490,3 +490,85 @@ The payoff matrix for the quantum game consisting of all the possible combinatio
 ```
 
 ### Quantum Monty Hall Problem
+
+The qutrits required for this problem can be constructed in the following way:
+
+```{r}
+> Qt0
+     [,1]
+[1,]    1
+[2,]    0
+[3,]    0
+> Qt1
+     [,1]
+[1,]    0
+[2,]    1
+[3,]    0
+> Qt2
+     [,1]
+[1,]    0
+[2,]    0
+[3,]    1
+```
+
+Some SU(3) matrices:
+
+```{r}
+> Identity3
+     [,1] [,2] [,3]
+[1,]    1    0    0
+[2,]    0    1    0
+[3,]    0    0    1
+> Hhat
+                      [,1]                  [,2]                 [,3]
+[1,]  0.7071068+0.0000000i  0.5000000+0.0000000i 0.5000000+0.0000000i
+[2,] -0.5000000+0.0000000i  0.5303301-0.4677072i 0.1767767+0.4677072i
+[3,] -0.1767767-0.4677072i -0.3750000+0.3307189i 0.6250000+0.3307189i
+```
+
+A quantum state is prepared first from the qutrits:
+
+```{r}
+> Psi_in <- kronecker(Qt0, (Qt00+Qt11+Qt22)/sqrt(3))
+> Psi
+     [,1]
+[1,]  0.5
+[2,]  0.5
+[3,]  0.5
+[4,]  0.5
+```
+
+The **Quantum Monty Hall** problem, next, is simulated in the following way:
+
+```{r}
+> QMontyHall(Psi_in, pi/4, Identity3, Hhat)
+[1] 0.125 0.875
+```
+
+It returns the expected payoffs to Alice and Bob after the end of the game.
+
+## Miscellaneous functions
+
+Some of the functions that are required for the analyses are:
+
+### row_count()
+
+The above function calculates the number of rows in a matrix or a vector
+
+```{r}
+> row_count(Q01)
+[1] 4
+> row_count(I8)
+[1] 8
+```
+
+### col_count()
+
+The above function calculates the number of columns in a matrix or a vector
+
+```{r}
+> col_count(Q01)
+[1] 1
+> col_count(I8)
+[1] 8
+```
