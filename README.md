@@ -572,3 +572,16 @@ The above function calculates the number of columns in a matrix or a vector
 > col_count(I8)
 [1] 8
 ```
+
+### levi_civita()
+
+Calculates the Levi-Civita function for the integers: 0, 1 and 2
+
+```{r}
+> levi_civita(0, 2, 1)
+[1] -1
+> levi_civita(1, 2, 0)
+[1] 1
+> levi_civita(1, 2, 1)
+[1] 0
+```
