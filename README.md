@@ -311,3 +311,6 @@ Joining, by = c("V1", "V2")
 This generates the indices of the cell corresponding to the NASH equilibrium.
 
 ## Quantum Game Theory Models
+
+# Quantum Penny Flip
+
