@@ -466,3 +466,27 @@ The quantum version of the Newcomb's Paradox can be simulated by taking in the c
 
 ### Quantum Hawk and Dove
 
+One instance of the **Quantum Hawk and Dove** game can be simulated for a particular set of probability values:
+
+```{r}
+> moves <- list(I2, sigmaX(I2))
+> QHawkDove(0, 1, moves, 50, -100, -10)
+[1] 18.75 18.75
+```
+
+The payoff matrix for the quantum game consisting of all the possible combinations of the probabilities can also be constructed:
+
+```{r}
+> PayoffMatrix_QHawkDove(moves, 50, -100, -10)
+[[1]]
+         [,1]    [,2]
+[1,] 15.78125 21.9375
+[2,] 24.53125 28.4375
+
+[[2]]
+         [,1]    [,2]
+[1,] 28.28125 21.9375
+[2,] 24.53125 15.9375
+```
+
+### Quantum Monty Hall Problem
