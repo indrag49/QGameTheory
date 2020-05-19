@@ -312,5 +312,21 @@ This generates the indices of the cell corresponding to the NASH equilibrium.
 
 ## Quantum Game Theory Models
 
-# Quantum Penny Flip
+### Quantum Penny Flip
 
+For the game tree mentioned below:
+
+<img src="man/figures/2.png" alt=""/>
+
+The simulation codes go in the following way:
+
+```{r}
+> psi <- (u+d)/sqrt(2)
+> S1 <- sigmaX(I2)
+> S2 <- I2
+> H <- Hadamard(I2)
+> SA <- list(S1, S2)
+> SB <- list(H)
+> QPennyFlip(psi, SA,SB)
+```
+It produces the plot:
