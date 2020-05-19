@@ -330,3 +330,41 @@ The simulation codes go in the following way:
 > QPennyFlip(psi, SA,SB)
 ```
 It produces the plot:
+
+<img src="man/figures/3.png" alt=""/>
+
+### Quantum Prisoner's Dilemma
+
+One instance of the Quantum Prisoner's Dilemma game can be simulated first by providing the strategies played by both Alice and Bob along with the payoffs *w, x, y, z* available to them corresponding to their choices. The payoffs follow, *z>w>x>y*. 
+
+```{r}
+> QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
+[1] 1.5 4.0
+```
+
+It also generates the plot:
+
+<img src="man/figures/4.png" alt=""/>
+
+The payoff matrix of the **Quantum Prisoner's Dilemma** for both the players can be constructed:
+
+```{r}
+> moves <- list(I2, sigmaX(I2), Hadamard(I2), sigmaZ(I2))
+> PayoffMatrix_QPD(moves, 3, 1, 0, 5)
+[[1]]
+     [,1] [,2] [,3] [,4]
+[1,]    3    0 0.50  1.0
+[2,]    5    1 0.50  0.0
+[3,]    3    3 2.25  1.5
+[4,]    1    5 4.00  3.0
+
+[[2]]
+     [,1] [,2] [,3] [,4]
+[1,]  3.0  5.0 3.00    1
+[2,]  0.0  1.0 3.00    5
+[3,]  0.5  0.5 2.25    4
+[4,]  1.0  0.0 1.50    3
+```
+
+The above code also generates all the sixteen possible combinations of plots. Analysing, it is noticed that the quntum version helps us escape the so called dilemma in the classical Prisoner's dilemma game. One next uses the **IDSDS** algorithm to find the **strictly dominant strategy equilibrium**. The **NASH** equilibrium is also calculated by the above codes. It can be seen that both of them give the same result and the equilibrium is Pareto Optimum too.
+
