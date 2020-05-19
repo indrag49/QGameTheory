@@ -396,6 +396,32 @@ QDuelsPlot1(Psi, 5, 0.66666, 0.5, 0.2, 0.7)
 ```
 
 <p float="left">
-  <img src="man/figures/5.png" width="400" />
-  <img src="man/figures/6.png" width="400" /> 
+  <img src="man/figures/5.png" />
+  <img src="man/figures/6.png" /> 
 </p>
+
+2) For plotting Alice's and Bob's expected payoffs as functions of the number of rounds 'n' played in a repeated quantum duel
+
+```{r}
+QDuelsPlot2(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
+```
+<p float="left">
+  <img src="man/figures/7.png" />
+  <img src="man/figures/8.png" /> 
+</p>
+
+3) For plotting the improvement in Alice's expected payoff as a function of 'a' and 'b', if Alice chooses to fire at the air in her second shot, in a two round game
+
+```{r}
+QDuelsPlot3(Psi, 0, 0)
+```
+
+<img src="man/figures/9.png" alt=""/>
+
+4) For plotting the improvement in Bob's expected payoff as a function of 'a' and 'b', if Bob chooses to fire at the air in her second shot, in a two round game
+
+```{r}
+QDuelsPlot4(Psi, 0, 0)
+```
+
+<img src="man/figures/10.png" alt=""/>
