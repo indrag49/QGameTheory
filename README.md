@@ -368,3 +368,24 @@ The payoff matrix of the **Quantum Prisoner's Dilemma** for both the players can
 
 The above code also generates all the sixteen possible combinations of plots. Analysing, it is noticed that the quntum version helps us escape the so called dilemma in the classical Prisoner's dilemma game. One next uses the **IDSDS** algorithm to find the **strictly dominant strategy equilibrium**. The **NASH** equilibrium is also calculated by the above codes. It can be seen that both of them give the same result and the equilibrium is Pareto Optimum too.
 
+### Quantum Two Person Duel
+
+Simulation is carried out to calculate the expected payoffs to Alice and Bob for the following three cases:
+
+1) The game is continued for 'n' rounds and none of the players shoots at the air.
+
+2) The game is continued for 2 rounds and Alice shoots at the air in her second round.
+
+3) The game is continued for 2 rounds and Bob shoots at the air in her second round.
+
+```{r}
+> Qs <- (Q0+Q1)/sqrt(2)
+> Psi <- kronecker(Qs, Qs)
+> QDuels_Alice_payoffs(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
+[1] 0.2087876 0.3281732 0.4894636
+> QDuels_Bob_payoffs(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
+[1] 0.7912124 0.6718268 0.5105364
+```
+
+Four plotting functions are available to simulate the corresponding results:
+
