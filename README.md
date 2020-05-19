@@ -425,3 +425,44 @@ QDuelsPlot4(Psi, 0, 0)
 ```
 
 <img src="man/figures/10.png" alt=""/>
+
+### Quantum Battle of the Sexes
+
+One instance for the **Quantum Battle of the Sexes** can be computed for a particular set of probability values:
+
+```{r}
+> moves <- list(I2, sigmaX(I2))
+> QBOS(0, 1, moves, 5, 3, 1)
+[1] 1.875 2.375
+```
+The payoff matrix for the quantum game consisting of all the possible combinations of the probabilities can also be constructed:
+
+```{r}
+> PayoffMatrix_QBOS(moves, 5, 3, 1)
+[[1]]
+      [,1]  [,2]
+[1,] 2.875 1.875
+[2,] 2.375 2.875
+
+[[2]]
+      [,1]  [,2]
+[1,] 2.875 2.375
+[2,] 1.875 2.875
+```
+
+### Quantum Newcomb's Paradox
+
+The quantum version of the Newcomb's Paradox can be simulated by taking in the choice of the qubit |0> or |1> by the supercomputer 'Omega' and the probability with which Alice plays the spin flip operator as the input parameters.
+
+```{r}
+> QNewcomb(Q1, 0)
+     [,1]
+[1,]    0
+[2,]    0
+[3,]    0
+[4,]    1
+```
+<img src="man/figures/11.png" alt=""/>
+
+### Quantum Hawk and Dove
+
