@@ -396,6 +396,6 @@ QDuelsPlot1(Psi, 5, 0.66666, 0.5, 0.2, 0.7)
 ```
 
 <p float="left">
-  <img src="man/figures/5.png" />
-  <img src="man/figures/6.png" /> 
+  <img src="man/figures/5.png" width="400" />
+  <img src="man/figures/6.png" width="400" /> 
 </p>
