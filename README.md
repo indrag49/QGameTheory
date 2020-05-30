@@ -230,9 +230,9 @@ There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, 
 [1,] 0.7071068+0.0000000i
 [2,] 0.0000000+0.7071068i
 > Rx(Q1, pi/3)
-               [,1]
-[1,] 0.8660254-0.5i
-[2,] 1.0000000+0.0i
+                    [,1]
+[1,] 0.9659258+0.000000i
+[2,] 0.0000000-0.258819i
 ```
 One can prepare on of the 4 Bell states by using:
 
