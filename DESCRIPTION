@@ -1,13 +1,13 @@
 Package: QGameTheory
 Title: Quantum Game Theory Simulator
-Version: 0.0.1
+Version: 0.1.1
 Author: Indranil Ghosh
 Maintainer: Indranil Ghosh <indranilg49@gmail.com>
 Imports: dplyr, 
          RColorBrewer,
          R.utils
 Depends: R(>= 3.4)
-Description: General purpose toolbox for simulating quantum versions of game theoretic models. Quantum versions of models that have been handled are: Penny Flip Game, Prisoner's Dilemma, Two Person Duel, Battle of the Sexes, Hawk and Dove Game, Newcomb's Paradox and Monty Hall Problem.
+Description: General purpose toolbox for simulating quantum versions of game theoretic models (Flitney and Abbott 2002) <arXiv:quant-ph/0208069>. Quantum (Nielsen and Chuang 2010, ISBN:978-1-107-00217-3) versions of models that have been handled are: Penny Flip Game (David A. Meyer 1998) <arXiv:quant-ph/9804010>, Prisoner's Dilemma (J. Orlin Grabbe 2005) <arXiv:quant-ph/0506219>, Two Person Duel (Flitney and Abbott 2004) <arXiv:quant-ph/0305058>, Battle of the Sexes (Nawaz and Toor 2004) <arXiv:quant-ph/0110096>, Hawk and Dove Game (Nawaz and Toor 2010) <arXiv:quant-ph/0108075>, Newcomb's Paradox (Piotrowski and Sladkowski 2002) <arXiv:quant-ph/0202074> and Monty Hall Problem (Flitney and Abbott 2002) <arXiv:quant-ph/0109035>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 URL: https://github.com/indrag49/QGameTheory
