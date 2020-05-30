@@ -13,6 +13,8 @@
 #' @usage
 #' init()
 #'
+#' @return No return value, generates the global variables/parameters.
+#'
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0512125.pdf}\cr

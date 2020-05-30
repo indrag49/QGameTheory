@@ -11,6 +11,9 @@ Bell(qubit1, qubit2)
 
 \item{qubit2}{2nd input qubit}
 }
+\value{
+One of the Bell states as a vector depending on the input qubits.
+}
 \description{
 The function builds one of the four Bell states, according to the input qubits
 }

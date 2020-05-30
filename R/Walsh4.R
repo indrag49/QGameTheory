@@ -8,12 +8,14 @@
 #' Walsh-Hadamard gate
 #'
 #' @description
-#' This function operates the Walsh-4 gate on a conformable input matrix.
+#' This function operates the Walsh-4 gate on a conformable input matrix or a vector.
 #'
 #' @param n a vector/matrix
 #'
 #' @usage
 #' Walsh4(n)
+#'
+#' @return A matrix or a vector after performing the Walsh-4 gate operation on a conformable input matrix or a vector.
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr

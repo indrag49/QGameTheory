@@ -11,6 +11,9 @@ IDSDS(P1, P2)
 
 \item{P2}{Payoff matrix to Bob}
 }
+\value{
+A list consisting of the equilibrium strategies based on the rationality of the players by application of the IDSDS algorithm on \code{P1} and \code{P2}.
+}
 \description{
 This function applies the IDSDS algorithm to result in the equilibrium strategies based on the rationaility of the players. The input parameters are equal dimensional payoff matrices for the first and the second players.
 }

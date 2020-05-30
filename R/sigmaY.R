@@ -8,12 +8,14 @@
 #' Pauli-Y gate
 #'
 #' @description
-#' This function operates the Pauli-X gate on a conformable input matrix.
+#' This function operates the Pauli-Y gate on a conformable input matrix or a vector.
 #'
 #' @param n a vector/matrix
 #'
 #' @usage
 #' sigmaY(n)
+#'
+#' @return A matrix or a vector after performing the Pauli-Y gate operation on a conformable input matrix or a vector.
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr

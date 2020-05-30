@@ -15,8 +15,11 @@ PayoffMatrix_QHawkDove(moves, v, j, D)
 
 \item{D}{a number}
 }
+\value{
+The payoff matrices for the two players as two elements of a list.
+}
 \description{
-This function generates the payoff matrix for the Quantum Hawk and Dove game for all the four combinations of 'p' and 'q'. 'moves' is a list of two possible strategies for each of the players and {v, j, D} are the value of resource, cost of injury and cost of displaying.
+This function generates the payoff matrix for the Quantum Hawk and Dove game for all the four combinations of \code{p} and \code{q}. \code{moves} is a list of two possible strategies for each of the players and \code{v, j, D} are the value of resource, cost of injury and cost of displaying respectively.
 }
 \examples{
 init()

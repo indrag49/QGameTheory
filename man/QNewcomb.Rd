@@ -11,8 +11,11 @@ QNewcomb(Omega, probability)
 
 \item{probability}{a real number between 0 and 1 including the end points}
 }
+\value{
+The final state of the quantum game as a vector along with plotting the probability densities of the qubits of the final state after measurement.
+}
 \description{
-This function simulates the quantum version of the Newcomb's Paradox by taking in the choice of the qubit |0> or |1> by the supercomputer 'Omega' and the probability 'probability' with which Alice plays the spin flip operator. It returns the final state of the quantum game along with plotting the probability densities of the qubits of the final state after measurement.
+This function simulates the quantum version of the Newcomb's Paradox by taking in the choice of the qubit |0> or |1> by the supercomputer \code{Omega} and the probability \code{'probability'} with which Alice plays the spin flip operator. It returns the final state of the quantum game along with plotting the probability densities of the qubits of the final state after measurement.
 }
 \examples{
 init()

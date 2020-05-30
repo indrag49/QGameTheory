@@ -13,8 +13,11 @@ QPennyFlip(initial_state, strategies_Alice, strategies_Bob)
 
 \item{strategies_Bob}{a matrix lying in SU(2)}
 }
+\value{
+The final state of the game along with the plot of the probability distribution of the qubits after measurement of the final state by taking in the initial state of the game that is set by Alice and the strategies available to Alice and Bob as the inputs.
+}
 \description{
-This function simulates the Quantum Penny Flip game by taking in the initial state of the game that is set by Alice and the strategies available to Alice and Bob. It returns the final state of the game along with the probability distribution of the qubits after measurement of the final state.
+This function simulates the Quantum Penny Flip game by taking in the initial state of the game that is set by Alice and the strategies available to Alice and Bob. It returns the final state of the game along with the plot of the probability distribution of the qubits after measurement of the final state.
 }
 \examples{
 init()

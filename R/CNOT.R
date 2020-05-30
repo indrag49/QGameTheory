@@ -8,12 +8,14 @@
 #' CNOT gate
 #'
 #' @description
-#' This function operates the CNOT gate on a conformable input matrix
+#' This function operates the CNOT gate on a conformable input matrix/vector
 #'
 #' @param n A vector/matrix
 #'
 #' @usage
 #' CNOT(n)
+#'
+#' @return A matrix or a vector after performing the CNOT gate operation on a conformable input matrix or a vector.
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr

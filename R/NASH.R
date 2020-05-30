@@ -16,6 +16,8 @@
 #' @usage
 #' NASH(P1, P2)
 #'
+#' @return The cell positons of the Nash equilibrium/equilibria as a dataframe from the payoff matrices of the players.
+#'
 #' @references
 #' \url{https://arxiv.org/abs/1512.06808}\cr
 #' \url{https://en.wikipedia.org/wiki/Nash_equilibrium}\cr

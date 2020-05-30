@@ -9,8 +9,11 @@ sigmaY(n)
 \arguments{
 \item{n}{a vector/matrix}
 }
+\value{
+A matrix or a vector after performing the Pauli-Y gate operation on a conformable input matrix or a vector.
+}
 \description{
-This function operates the Pauli-X gate on a conformable input matrix.
+This function operates the Pauli-Y gate on a conformable input matrix or a vector.
 }
 \examples{
 init()

@@ -7,7 +7,10 @@
 row_count(M)
 }
 \arguments{
-\item{M}{a vector/matrix}
+\item{M}{A vector/matrix}
+}
+\value{
+An integer that gives the number of rows in a vector or a matrix.
 }
 \description{
 This function counts the number of rows of a vector or a matrix

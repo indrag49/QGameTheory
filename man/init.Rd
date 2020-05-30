@@ -6,6 +6,9 @@
 \usage{
 init()
 }
+\value{
+No return value, generates the global variables/parameters.
+}
 \description{
 Builds the parameters in the global environment after initialization
 }

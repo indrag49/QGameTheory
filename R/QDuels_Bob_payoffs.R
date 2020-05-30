@@ -9,11 +9,11 @@
 #'
 #' @description
 #' This function returns the expected payoff to Bob for three possible cases for the Quantum Duel game:
-#' 1) The game is continued for 'n' rounds and none of the players shoots at the air.
+#' 1) The game is continued for \code{n} rounds and none of the players shoots at the air.
 #' 2) The game is continued for 2 rounds and Alice shoots at the air in her second round.
 #' 3) The game is continued for 2 rounds and Bob shoots at the air in her second round.
-#' Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' is the probability of Alice missing the target, 'b' is the probability of Bob missing the target, and
-#' {'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player
+#'
+#' \code{Psi} is the initial state of the quantum game, \code{n} is the number of rounds, \code{a} is the probability of Alice missing the target, \code{b} is the probability of Bob missing the target, and \code{alpha1, alpha2, beta1, beta2} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player.
 #'
 #' @param Psi a vector representing the initial quantum state
 #' @param n an integer
@@ -26,6 +26,8 @@
 #'
 #' @usage
 #' QDuels_Bob_payoffs(Psi, n, a, b, alpha1, alpha2, beta1, beta2)
+#'
+#' @return A list consisting of the payoff value to Bob depending on three situations of the quantum duel game: 1) The game is continued for \code{n} rounds and none of the players shoots at the air, 2) The game is continued for 2 rounds and Alice shoots at the air in her second round and 3) The game is continued for 2 rounds and Bob shoots at the air in her second round.
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr

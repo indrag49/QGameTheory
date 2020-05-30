@@ -9,8 +9,11 @@ PhaseDagger(n)
 \arguments{
 \item{n}{a vector/matrix}
 }
+\value{
+A matrix or a vector after performing the operation of the hermitian transpose of the Phase gate on a conformable input matrix or a vector.
+}
 \description{
-This function operates the hermitian transpose of the Phase gate on a conformable input matrix
+This function operates the hermitian transpose of the Phase gate on a conformable input matrix/vector
 }
 \examples{
 init()

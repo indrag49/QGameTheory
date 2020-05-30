@@ -8,13 +8,15 @@
 #' Rotation operation about z-axis of the Bloch sphere
 #'
 #' @description
-#' This function operates the Rotation gate about the z-axis of the Bloch sphere by an angle 'theta' on a conformable input matrix 'n'.
+#' This function operates the Rotation gate about the z-axis of the Bloch sphere by an angle \code{theta} on a conformable input matrix \code{n}.
 #'
 #' @param n a vector/matrix
 #' @param theta an angle
 #'
 #' @usage
 #' Rz(n, theta)
+#'
+#' @return A vector or a matrix after operating the Rotation gate about the z-axis of the Bloch sphere, by an angle \code{theta}, on a conformable input matrix or a vector \code{n}.
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr
@@ -29,5 +31,6 @@
 #'
 
 Rz <- function(n, theta){
-  return (exp(-1i*theta*sigmaZ(I2)/2))
+  r <- matrix(c(exp(-1i*theta/2), 0, 0, exp(1i*theta/2)), ncol=2, byrow=TRUE)
+  return (r %*% n)
 }

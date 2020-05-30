@@ -8,7 +8,7 @@
 #' Quantum Monty Hall Problem
 #'
 #' @description
-#' This function simulates the quantum version of the Monty Hall problem, by taking in 'Psi_in' as the initial quantum state of the game, 'gamma' lying in 0 to pi/2, Ahat and Bhat as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.
+#' This function simulates the quantum version of the Monty Hall problem, by taking in \code{Psi_in} as the initial quantum state of the game, \code{gamma} lying in 0 to pi/2, \code{Ahat} and \code{Bhat} as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.
 #'
 #' @param Psi_in a vector representing the initial quantum state
 #' @param gamma a number between 0 and pi/2 including the end points
@@ -17,6 +17,8 @@
 #'
 #' @usage
 #' QMontyHall(Psi_in, gamma, Ahat, Bhat)
+#'
+#' @return A vector consisting of the expected payoffs to Alice and Bob as its elements depending on the input parameters.
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr

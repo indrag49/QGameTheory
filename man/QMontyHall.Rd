@@ -15,8 +15,11 @@ QMontyHall(Psi_in, gamma, Ahat, Bhat)
 
 \item{Bhat}{a matrix lying in SU(3)}
 }
+\value{
+A vector consisting of the expected payoffs to Alice and Bob as its elements depending on the input parameters.
+}
 \description{
-This function simulates the quantum version of the Monty Hall problem, by taking in 'Psi_in' as the initial quantum state of the game, 'gamma' lying in 0 to pi/2, Ahat and Bhat as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.
+This function simulates the quantum version of the Monty Hall problem, by taking in \code{Psi_in} as the initial quantum state of the game, \code{gamma} lying in 0 to pi/2, \code{Ahat} and \code{Bhat} as the choice operators in SU(3) for Alice and Bob respectively as the inputs. It returns the expected payoffs to Alice and Bob after the end of the game.
 }
 \examples{
 init()

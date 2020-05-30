@@ -16,6 +16,8 @@
 #' @usage
 #' Bell(qubit1, qubit2)
 #'
+#' @return One of the Bell states as a vector depending on the input qubits.
+#'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Bell_state}\cr
 #' \url{https://books.google.co.in/books?id=66TgFp2YqrAC&pg=PA25&redir_esc=y}\cr

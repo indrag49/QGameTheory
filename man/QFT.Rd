@@ -9,8 +9,11 @@ QFT(y)
 \arguments{
 \item{y}{an integer}
 }
+\value{
+A vector representing the Quantum Fourier transformation of the state \code{|y>} from the computational basis to the Fourier basis.
+}
 \description{
-This function performs Quantum Fourier Transform for a given state |y>.
+This function performs Quantum Fourier Transform for a given state \code{|y>} from the computational basis to the Fourier basis.
 }
 \examples{
 init()

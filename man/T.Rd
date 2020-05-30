@@ -9,8 +9,11 @@ T(n)
 \arguments{
 \item{n}{a vector/matrix}
 }
+\value{
+A matrix or a vector after performing the T gate operation on a conformable input matrix or a vector.
+}
 \description{
-This function operates the T gate on a conformable input matrix.
+This function operates the T gate on a conformable input matrix or a vector.
 }
 \examples{
 init()

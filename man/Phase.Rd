@@ -9,8 +9,11 @@ Phase(n)
 \arguments{
 \item{n}{a vector/matrix}
 }
+\value{
+A matrix or a vector after performing the Phase gate operation on a conformable input matrix or a vector.
+}
 \description{
-This function operates the Phase gate on a conformable input matrix
+This function operates the Phase gate on a conformable input matrix/vector
 }
 \examples{
 init()

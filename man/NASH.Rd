@@ -11,6 +11,9 @@ NASH(P1, P2)
 
 \item{P2}{Payoff matrix to Bob}
 }
+\value{
+The cell positons of the Nash equilibrium/equilibria as a dataframe from the payoff matrices of the players.
+}
 \description{
 This function finds out the Nash equilibria of the 2-D payoff matrix for the players. The input parameters are equal dimensional payoff matrices for the first and the second players.
 }

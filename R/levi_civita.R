@@ -17,6 +17,8 @@
 #' @usage
 #' levi_civita(i, j, k)
 #'
+#' @return 0, 1 or -1 after computing the Levi-Civita symbol depending on the permutations of the three inputs 0, 1 and 2
+#'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Levi-Civita_symbol}\cr
 #'

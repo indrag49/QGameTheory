@@ -9,8 +9,11 @@ CNOT(n)
 \arguments{
 \item{n}{A vector/matrix}
 }
+\value{
+A matrix or a vector after performing the CNOT gate operation on a conformable input matrix or a vector.
+}
 \description{
-This function operates the CNOT gate on a conformable input matrix
+This function operates the CNOT gate on a conformable input matrix/vector
 }
 \examples{
 init()

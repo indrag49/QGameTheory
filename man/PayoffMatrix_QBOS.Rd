@@ -15,8 +15,11 @@ PayoffMatrix_QBOS(moves, alpha, beta, gamma)
 
 \item{gamma}{a number}
 }
+\value{
+The payoff matrices for the two players as two elements of a list.
+}
 \description{
-This function generates the payoff matrix for the Quantum Battle of Sexes game for all the four combinations of 'p' and 'q'. 'moves' is a list of two possible strategies for each of the players and {'alpha', 'beta', 'gamma'} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, 'alpha'>'beta'>'gamma'.
+This function generates the payoff matrix for the Quantum Battle of Sexes game for all the four combinations of \code{p} and \code{q}. \code{moves} is a list of two possible strategies for each of the players and \code{alpha, beta, gamma} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, \code{alpha>beta>gamma}.
 }
 \examples{
 init()

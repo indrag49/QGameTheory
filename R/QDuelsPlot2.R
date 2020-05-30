@@ -8,8 +8,8 @@
 #' Quantum Two Person Duel game
 #'
 #' @description
-#' This function helps us to plot Alice's and Bob's expected payoffs as functions of the number of rounds 'n' played in a repeated quantum duel. Psi is the initial state of the quantum game, 'n' is the number of rounds, 'a' is the probability of Alice missing the target, 'b' is the probability of Bob missing the target, and
-#' {'alpha1', 'alpha2', 'beta1', 'beta2'} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player.
+#' This function helps us to plot Alice's and Bob's expected payoffs as functions of the number of rounds \code{n} played in a repeated quantum duel. \code{Psi} is the initial state of the quantum game, \code{n} is the number of rounds, \code{a} is the probability of Alice missing the target, \code{b} is the probability of Bob missing the target, and
+#' \code{alpha1, alpha2, beta1, beta2} are arbitrary phase factors that lie in -pi to pi that control the outcome of a poorly performing player.
 #'
 #' @param Psi a vector representing the initial quantum state
 #' @param n an integer
@@ -22,6 +22,8 @@
 #'
 #' @usage
 #' QDuelsPlot2(Psi, n, a, b, alpha1, alpha2, beta1, beta2)
+#'
+#' @return No return value, plots Alice's and Bob's expected payoffs as functions of the number of rounds \code{n} played in a repeated quantum duel.
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr

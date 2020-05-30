@@ -10,10 +10,12 @@
 #' @description
 #' This function counts the number of columns of a vector or a matrix
 #'
-#' @param M a A vector/matrix
+#' @param M A vector/matrix
 #'
 #' @usage
 #' col_count(M)
+#'
+#' @return An integer that gives the number of columns in a vector or a matrix.
 #'
 #' @examples
 #' init()

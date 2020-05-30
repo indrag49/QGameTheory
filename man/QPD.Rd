@@ -19,8 +19,11 @@ QPD(U_Alice, U_Bob, w, x, y, z)
 
 \item{z}{a number}
 }
+\value{
+A vector consisting of the expected payoffs to Alice and Bob as its elements according to the strategies played by Alice and Bob and also the payoff values.
+}
 \description{
-This function returns the expected payoffs to Alice and Bob, with the strategy moves by Alice and Bob as two of the inputs. {w, x, y, z} are the payoffs to the players corresponding to the choices available to them with the chain of inequalities, z>w>x>y.
+This function returns the expected payoffs to Alice and Bob, with the strategy moves by Alice and Bob as two of the inputs. \code{w, x, y, z} are the payoffs to the players corresponding to the choices available to them with the chain of inequalities, \code{z>w>x>y}.
 This function also plots the probability distribution plots of the qubits for one of all the combinations of the strategies of the players.
 }
 \examples{

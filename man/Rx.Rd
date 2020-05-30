@@ -11,8 +11,11 @@ Rx(n, theta)
 
 \item{theta}{an angle}
 }
+\value{
+A vector or a matrix after operating the Rotation gate about the x-axis of the Bloch sphere, by an angle \code{theta}, on a conformable input matrix or a vector \code{n}
+}
 \description{
-This function operates the Rotation gate about the x-axis of the Bloch sphere by an angle 'theta' on a conformable input matrix 'n'.
+This function operates the Rotation gate about the x-axis of the Bloch sphere by an angle \code{theta} on a conformable input matrix \code{n}.
 }
 \examples{
 init()

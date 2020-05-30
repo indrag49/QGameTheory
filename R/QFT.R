@@ -8,12 +8,14 @@
 #' Quantum Fourier Transform
 #'
 #' @description
-#' This function performs Quantum Fourier Transform for a given state |y>.
+#' This function performs Quantum Fourier Transform for a given state \code{|y>} from the computational basis to the Fourier basis.
 #'
 #' @param y an integer
 #'
 #' @usage
 #' QFT(y)
+#'
+#' @return A vector representing the Quantum Fourier transformation of the state \code{|y>} from the computational basis to the Fourier basis.
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr

@@ -8,7 +8,7 @@
 #' Quantum Hawk and Dove game
 #'
 #' @description
-#' This function returns the expected payoffs to Alice and Bob with respect to the probabilities 'p' and 'q'. p+q should equal 1 and 'moves' is a list of two possible strategies for each of the players and {v, j, D} are the value of resource, cost of injury and cost of displaying.
+#' This function returns the expected payoffs to Alice and Bob with respect to the probabilities \code{p} and \code{q}. \code{p+q} should equal 1 and \code{moves} is a list of two possible strategies for each of the players and \code{v, j, D} are the value of resource, cost of injury and cost of displaying respectively.
 #'
 #' @param p a real number between 0 and 1 including the end points
 #' @param q a real number between 0 and 1 including the end points
@@ -19,6 +19,8 @@
 #'
 #' @usage
 #' QHawkDove(p, q, moves, v, j, D)
+#'
+#' @return A vector consisting of the expected payoffs to Alice and Bob as its elements calculated according to the probabilities \code{p} and \code{q} provided as inputs.
 #'
 #' @references
 #' \url{https://arxiv.org/pdf/quant-ph/0506219.pdf}\cr

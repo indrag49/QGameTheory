@@ -9,8 +9,11 @@ Walsh8(n)
 \arguments{
 \item{n}{a vector/matrix}
 }
+\value{
+A matrix or a vector after performing the Walsh-8 gate operation on a conformable input matrix or a vector.
+}
 \description{
-This function operates the Walsh-8 gate on a conformable input matrix.
+This function operates the Walsh-8 gate on a conformable input matrix or vector.
 }
 \examples{
 init()

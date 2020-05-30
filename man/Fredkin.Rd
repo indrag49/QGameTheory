@@ -9,8 +9,11 @@ Fredkin(n)
 \arguments{
 \item{n}{A vector/matrix}
 }
+\value{
+A matrix or a vector after performing the Fredkin gate operation on a conformable input matrix or a vector.
+}
 \description{
-This function operates the Fredkin gate on a conformable input matrix
+This function operates the Fredkin gate on a conformable input matrix/vector
 }
 \examples{
 init()

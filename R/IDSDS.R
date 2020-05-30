@@ -16,6 +16,8 @@
 #' @usage
 #' IDSDS(P1, P2)
 #'
+#' @return A list consisting of the equilibrium strategies based on the rationality of the players by application of the IDSDS algorithm on \code{P1} and \code{P2}.
+#'
 #' @references
 #' \url{https://arxiv.org/abs/1512.06808}\cr
 #' \url{https://en.wikipedia.org/wiki/Strategic_dominance}\cr
@@ -63,5 +65,6 @@ IDSDS <- function(P1, P2){
     check1 <- 0
     check2 <- 0
   }
+
   return (list(P1, P2))
 }

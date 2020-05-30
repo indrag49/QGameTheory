@@ -9,8 +9,11 @@ QMeasure(n)
 \arguments{
 \item{n}{a vector representing a quantum state}
 }
+\value{
+No return value, plots the probability distributions of the qubits after performing a projective measurement of a quantum state \code{n}.
+}
 \description{
-This function performs a projective measurement of a quantum state 'n', in the computational basis and plots the corresponding probability distributions of the qubits.
+This function performs a projective measurement of a quantum state \code{n}, in the computational basis and plots the corresponding probability distributions of the qubits.
 }
 \examples{
 init()

@@ -7,7 +7,10 @@
 col_count(M)
 }
 \arguments{
-\item{M}{a A vector/matrix}
+\item{M}{A vector/matrix}
+}
+\value{
+An integer that gives the number of columns in a vector or a matrix.
 }
 \description{
 This function counts the number of columns of a vector or a matrix

@@ -17,8 +17,11 @@ PayoffMatrix_QPD(moves, w, x, y, z)
 
 \item{z}{a number}
 }
+\value{
+The payoff matrices for the two players as two elements of a list.
+}
 \description{
-This function generates the payoff matrix for the Quantum Prisoner's Dilemma game . 'moves' is a list of the possible strategies for each of the players and {w, x, y, z} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, z>w>x>y.
+This function generates the payoff matrix for the Quantum Prisoner's Dilemma game . \code{moves} is a list of the possible strategies for each of the players and \code{w, x, y, z} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, \code{z>w>x>y}.
 This function also plots the probability distribution plots of the qubits for all the possible combinations of the strategies of the players.
 }
 \examples{

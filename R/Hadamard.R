@@ -8,12 +8,14 @@
 #' Hadamard Gate
 #'
 #' @description
-#' This function operates the Hadamard gate on a conformable input matrix
+#' This function operates the Hadamard gate on a conformable input matrix/vector
 #'
 #' @param n A vector/matrix
 #'
 #' @usage
 #' Hadamard(n)
+#'
+#' @return A matrix or a vector after performing the Hadamard operation on a conformable input matrix or a vector.
 #'
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Quantum_logic_gate}\cr

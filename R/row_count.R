@@ -10,7 +10,9 @@
 #' @description
 #' This function counts the number of rows of a vector or a matrix
 #'
-#' @param M a vector/matrix
+#' @param M A vector/matrix
+#'
+#' @return An integer that gives the number of rows in a vector or a matrix.
 #'
 #' @usage
 #' row_count(M)

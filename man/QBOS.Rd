@@ -19,8 +19,11 @@ QBOS(p, q, moves, alpha, beta, gamma)
 
 \item{gamma}{a number}
 }
+\value{
+A vector consisting of the Payoffs to Alice and Bob as its two elements depending on the inputs.
+}
 \description{
-This function returns the expected payoffs to Alice and Bob with respect to the probabilities 'p' and 'q'. p+q should equal 1 and 'moves' is a list of two possible strategies for each of the players and {'alpha', 'beta', 'gamma'} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, 'alpha'>'beta'>'gamma'.
+This function returns the expected payoffs to Alice and Bob with respect to the probabilities \code{p} and \code{q}. \code{p+q} should equal 1 and \code{moves} is a list of two possible strategies for each of the players and \code{alpha, beta, gamma} are the payoffs for the players corresponding to the choices available to them with the chain of inequalities, \code{alpha>beta>gamma}.
 }
 \examples{
 init()

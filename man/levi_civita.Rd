@@ -13,6 +13,9 @@ levi_civita(i, j, k)
 
 \item{k}{an integer 0, 1 or 2}
 }
+\value{
+0, 1 or -1 after computing the Levi-Civita symbol depending on the permutations of the three inputs 0, 1 and 2
+}
 \description{
 This function computes the Levi-Civita symbol depending on the permutations of the three inputs, lying in 0 to 2
 }
