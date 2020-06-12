@@ -16,6 +16,11 @@ The development version of the package can be installed from the github reposito
 install.packages("devtools")
 devtools::install_github("indrag49/QGameTheory")
 ```
+The released version of **QGameTheory** can be installed from CRAN:
+
+```{r}
+install.packages("QGameTheory")
+```
 
 ## Dependencies
 
@@ -28,11 +33,17 @@ library(R.utils)
 ```
 ## Global Variables
 
-The global variables that are required for the quantum game theoretic models, are built by initializing:
+The variables that are required for the quantum game theoretic models, are built by initializing:
 
 ```{r}
 init()
 ```
+Where an environement has been developed for holding the variables:
+
+```{r}
+Q <<- new.env(parent=emptyenv())
+```
+
 All the global parameters/variables are made visible by:
 
 ```{r}
