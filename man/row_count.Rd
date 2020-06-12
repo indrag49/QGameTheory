@@ -17,8 +17,8 @@ This function counts the number of rows of a vector or a matrix
 }
 \examples{
 init()
-row_count(Q01)
-row_count(lambda5)
-row_count(Qt12)
+row_count(Q$Q01)
+row_count(Q$lambda5)
+row_count(Q$Qt12)
 
 }

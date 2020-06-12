@@ -28,8 +28,8 @@
 #'
 #' @examples
 #' init()
-#' Qs <- (Q0+Q1)/sqrt(2)
-#' Psi <- kronecker(Q1, Qs)
+#' Qs <- (Q$Q0+Q$Q1)/sqrt(2)
+#' Psi <- kronecker(Q$Q1, Qs)
 #' QDuelsPlot3(Psi, pi/3, pi/6)
 #'
 #' @export

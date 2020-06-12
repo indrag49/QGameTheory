@@ -29,7 +29,7 @@
 #'
 #' @examples
 #' init()
-#' moves <- list(I2, sigmaX(I2), Hadamard(I2), sigmaZ(I2))
+#' moves <- list(Q$I2, sigmaX(Q$I2), Hadamard(Q$I2), sigmaZ(Q$I2))
 #' PayoffMatrix_QPD(moves, 3, 1, 0, 5)
 #'
 #' @export

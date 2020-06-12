@@ -17,8 +17,8 @@ This function counts the number of columns of a vector or a matrix
 }
 \examples{
 init()
-col_count(Q11)
-col_count(lambda4)
-col_count(I2)
+col_count(Q$Q11)
+col_count(Q$lambda4)
+col_count(Q$I2)
 
 }

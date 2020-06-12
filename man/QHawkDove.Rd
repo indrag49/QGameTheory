@@ -27,7 +27,7 @@ This function returns the expected payoffs to Alice and Bob with respect to the 
 }
 \examples{
 init()
-moves <- list(I2, sigmaX(I2))
+moves <- list(Q$I2, sigmaX(Q$I2))
 QHawkDove(0, 1, moves, 50, -100, -10)
 QHawkDove(0, 0, moves, 50, -100, -10)
 

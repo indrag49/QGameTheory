@@ -23,8 +23,8 @@ This function simulates the quantum version of the Monty Hall problem, by taking
 }
 \examples{
 init()
-Psi_in <- kronecker(Qt0, (Qt00+Qt11+Qt22)/sqrt(3))
-QMontyHall(Psi_in, pi/4, Identity3, Hhat)
+Psi_in <- kronecker(Q$Qt0, (Q$Qt00+Q$Qt11+Q$Qt22)/sqrt(3))
+QMontyHall(Psi_in, pi/4, Q$Identity3, Q$Hhat)
 
 }
 \references{

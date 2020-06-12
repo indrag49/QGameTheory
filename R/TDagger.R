@@ -23,8 +23,8 @@
 #'
 #' @examples
 #' init()
-#' TDagger(I2)
-#' TDagger(Q_plus)
+#' TDagger(Q$I2)
+#' TDagger(Q$Q_plus)
 #'
 #' @export
 #'

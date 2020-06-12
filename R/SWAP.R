@@ -23,15 +23,15 @@
 #'
 #' @examples
 #' init()
-#' SWAP(I4)
-#' SWAP(Q10)
+#' SWAP(Q$I4)
+#' SWAP(Q$Q10)
 #'
 #' @export
 #'
 
 
 SWAP <- function(n) {
-  x <- I4
+  x <- Q$I4
   t <- x[2,]
   x[2,] <- x[3,]
   x[3,] <- t

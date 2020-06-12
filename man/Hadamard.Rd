@@ -17,9 +17,9 @@ This function operates the Hadamard gate on a conformable input matrix/vector
 }
 \examples{
 init()
-Hadamard(Q0)
-Hadamard(I2)
-Hadamard(Hadamard(Q1))
+Hadamard(Q$Q0)
+Hadamard(Q$I2)
+Hadamard(Hadamard(Q$Q1))
 
 }
 \references{

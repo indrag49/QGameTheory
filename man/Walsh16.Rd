@@ -17,8 +17,8 @@ This function operates the Walsh-16 gate on a conformable input matrix or a vect
 }
 \examples{
 init()
-Walsh16(I16)
-Walsh16(Q1001)
+Walsh16(Q$I16)
+Walsh16(Q$Q1001)
 
 }
 \references{

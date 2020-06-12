@@ -17,9 +17,9 @@ This function operates the Pauli-X gate on a conformable input matrix or a vecto
 }
 \examples{
 init()
-sigmaX(I2)
-sigmaX(Hadamard(I2))
-sigmaX(Q1)
+sigmaX(Q$I2)
+sigmaX(Hadamard(Q$I2))
+sigmaX(Q$Q1)
 
 }
 \references{

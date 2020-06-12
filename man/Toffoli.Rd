@@ -17,8 +17,8 @@ This function operates the Toffoli gate on a conformable input matrix or a vecto
 }
 \examples{
 init()
-Toffoli(I8)
-Toffoli(Q010)
+Toffoli(Q$I8)
+Toffoli(Q$Q010)
 
 }
 \references{

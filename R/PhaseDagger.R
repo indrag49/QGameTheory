@@ -23,8 +23,8 @@
 #'
 #' @examples
 #' init()
-#' Conj(t(Phase(I2)))==PhaseDagger(I2)
-#' PhaseDagger(Q_plus)
+#' Conj(t(Phase(Q$I2)))==PhaseDagger(Q$I2)
+#' PhaseDagger(Q$Q_plus)
 #'
 #' @export
 #'

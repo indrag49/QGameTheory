@@ -25,14 +25,14 @@
 #'
 #' @examples
 #' init()
-#' Walsh16(I16)
-#' Walsh16(Q1001)
+#' Walsh16(Q$I16)
+#' Walsh16(Q$Q1001)
 #'
 #' @export
 #'
 
 Walsh16 <- function(n){
-  h <- Hadamard(I2)
+  h <- Hadamard(Q$I2)
   w <- kronecker(kronecker(kronecker(h, h), h), h)
   return (w %*% n)
 }

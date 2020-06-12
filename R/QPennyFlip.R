@@ -28,9 +28,9 @@
 #' @examples
 #' init()
 #' psi <- (u+d)/sqrt(2)
-#' S1 <- sigmaX(I2)
-#' S2 <- I2
-#' H <- Hadamard(I2)
+#' S1 <- sigmaX(Q$I2)
+#' S2 <- Q$I2
+#' H <- Hadamard(Q$I2)
 #' SA <- list(S1, S2)
 #' SB <- list(H)
 #' QPennyFlip(psi, SA,SB)

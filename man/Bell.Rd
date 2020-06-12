@@ -19,10 +19,10 @@ The function builds one of the four Bell states, according to the input qubits
 }
 \examples{
 init()
-Bell(Q0, Q0)
-Bell(Q0, Q1)
-Bell(Q1, Q0)
-Bell(Q1, Q1)
+Bell(Q$Q0, Q$Q0)
+Bell(Q$Q0, Q$Q1)
+Bell(Q$Q1, Q$Q0)
+Bell(Q$Q1, Q$Q1)
 
 }
 \references{

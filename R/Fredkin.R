@@ -23,14 +23,14 @@
 #'
 #' @examples
 #' init()
-#' Fredkin(I8)
-#' Fredkin(Q110)
+#' Fredkin(Q$I8)
+#' Fredkin(Q$Q110)
 #'
 #' @export
 #'
 
 Fredkin <- function(n){
-  x <- I8
+  x <- Q$I8
   t <- x[6,]
   x[6,] <- x[7,]
   x[7,] <- t

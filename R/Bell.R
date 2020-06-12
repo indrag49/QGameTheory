@@ -24,26 +24,26 @@
 #'
 #' @examples
 #' init()
-#' Bell(Q0, Q0)
-#' Bell(Q0, Q1)
-#' Bell(Q1, Q0)
-#' Bell(Q1, Q1)
+#' Bell(Q$Q0, Q$Q0)
+#' Bell(Q$Q0, Q$Q1)
+#' Bell(Q$Q1, Q$Q0)
+#' Bell(Q$Q1, Q$Q1)
 #'
 #' @export
 
 Bell <- function(qubit1, qubit2){
   if (length(qubit1)!=2 | length(qubit2)!=2) return ("Error")
   if(qubit1[[1]] == 1){
-    h <- Hadamard(Q0)
+    h <- Hadamard(Q$Q0)
   }
   else{
-    h <- Hadamard(Q1)
+    h <- Hadamard(Q$Q1)
   }
   if(qubit2[[1]] == 0){
-    x <- kronecker(h, Q1)
+    x <- kronecker(h, Q$Q1)
   }
   else{
-    x <- kronecker(h, Q0)
+    x <- kronecker(h, Q$Q0)
   }
   return (CNOT(x))
 }

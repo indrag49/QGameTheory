@@ -17,8 +17,8 @@ This function operates the Walsh-8 gate on a conformable input matrix or vector.
 }
 \examples{
 init()
-Walsh8(I8)
-Walsh8(Q000)
+Walsh8(Q$I8)
+Walsh8(Q$Q000)
 
 }
 \references{

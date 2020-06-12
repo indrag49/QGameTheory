@@ -24,9 +24,9 @@
 #'
 #' @examples
 #' init()
-#' sigmaX(I2)
-#' sigmaX(Hadamard(I2))
-#' sigmaX(Q1)
+#' sigmaX(Q$I2)
+#' sigmaX(Hadamard(Q$I2))
+#' sigmaX(Q$Q1)
 #'
 #' @export
 #'

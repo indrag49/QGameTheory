@@ -17,8 +17,8 @@ This function operates the Fredkin gate on a conformable input matrix/vector
 }
 \examples{
 init()
-Fredkin(I8)
-Fredkin(Q110)
+Fredkin(Q$I8)
+Fredkin(Q$Q110)
 
 }
 \references{

@@ -23,15 +23,15 @@
 #'
 #' @examples
 #' init()
-#' Toffoli(I8)
-#' Toffoli(Q010)
+#' Toffoli(Q$I8)
+#' Toffoli(Q$Q010)
 #'
 #' @export
 #'
 
 
 Toffoli <- function(n) {
-  x <- I8
+  x <- Q$I8
   t <- x[7,]
   x[7,] <- x[8,]
   x[8,] <- t

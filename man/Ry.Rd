@@ -19,7 +19,7 @@ This function operates the Rotation gate about the y-axis of the Bloch sphere by
 }
 \examples{
 init()
-Ry(Q1, pi/3)
+Ry(Q$Q1, pi/3)
 
 }
 \references{

@@ -19,15 +19,14 @@
 #'
 #' @examples
 #' init()
-#' col_count(Q11)
-#' col_count(lambda4)
-#' col_count(I2)
+#' col_count(Q$Q11)
+#' col_count(Q$lambda4)
+#' col_count(Q$I2)
 #'
 #' @export
 #'
 
 col_count <- function(M){
-  if (exists(deparse(substitute(M)), envir=.GlobalEnv)) return (NCOL(M))
   if (is.null(dim(M))){
     return(NCOL(t(M)))
   }

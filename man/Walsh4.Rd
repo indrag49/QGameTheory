@@ -17,8 +17,8 @@ This function operates the Walsh-4 gate on a conformable input matrix or a vecto
 }
 \examples{
 init()
-Walsh4(I4)
-Walsh4(Q10)
+Walsh4(Q$I4)
+Walsh4(Q$Q10)
 
 }
 \references{

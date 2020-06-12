@@ -32,7 +32,7 @@ This function helps us to plot Alice's and Bob's expected payoffs as functions o
 }
 \examples{
 init()
-QDuelsPlot2(Q01, 10, 0.66666, 0.5, -pi/2, pi/4, 0.6, 0.4)
+QDuelsPlot2(Q$Q01, 10, 0.66666, 0.5, -pi/2, pi/4, 0.6, 0.4)
 
 }
 \references{

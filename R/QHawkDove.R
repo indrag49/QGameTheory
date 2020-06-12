@@ -30,7 +30,7 @@
 #'
 #' @examples
 #' init()
-#' moves <- list(I2, sigmaX(I2))
+#' moves <- list(Q$I2, sigmaX(Q$I2))
 #' QHawkDove(0, 1, moves, 50, -100, -10)
 #' QHawkDove(0, 0, moves, 50, -100, -10)
 #'
@@ -40,7 +40,7 @@
 QHawkDove <- function(p, q, moves, v, j, D){
   a <- b <- d <- sqrt(5/16)
   c <- 1/4
-  Psi_in <- a*Q00 + b*Q01 + c*Q10 + d*Q11
+  Psi_in <- a*Q$Q00 + b*Q$Q01 + c*Q$Q10 + d*Q$Q11
   density_in <- kronecker(Psi_in, t(Conj(Psi_in)))
   m1 <- moves[[1]]
   m2 <- moves[[2]]
@@ -49,8 +49,8 @@ QHawkDove <- function(p, q, moves, v, j, D){
   d3 <- q*(1-p)*kronecker(m2, m1) %*% density_in %*% kronecker(t(Conj(m2)), t(Conj(m1)))
   d4 <- (1-p)*(1-q)*kronecker(m2, m2) %*% density_in %*% kronecker(t(Conj(m2)), t(Conj(m2)))
   density_matrix <- d1+d2+d3+d4
-  PA <- (v+j)/2*kronecker(Q00, t(Conj(Q00)))+(v/2+D)*kronecker(Q11, t(Conj(Q11)))+v*kronecker(Q01, t(Conj(Q01)))
-  PB <- (v+j)/2*kronecker(Q00, t(Conj(Q00)))+(v/2+D)*kronecker(Q11, t(Conj(Q11)))+v*kronecker(Q10, t(Conj(Q10)))
+  PA <- (v+j)/2*kronecker(Q$Q00, t(Conj(Q$Q00)))+(v/2+D)*kronecker(Q$Q11, t(Conj(Q$Q11)))+v*kronecker(Q$Q01, t(Conj(Q$Q01)))
+  PB <- (v+j)/2*kronecker(Q$Q00, t(Conj(Q$Q00)))+(v/2+D)*kronecker(Q$Q11, t(Conj(Q$Q11)))+v*kronecker(Q$Q10, t(Conj(Q$Q10)))
   payoff_A <- sum(diag(PA %*% density_matrix))
   payoff_B <- sum(diag(PB %*% density_matrix))
   return (c(payoff_A, payoff_B))

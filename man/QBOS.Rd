@@ -27,7 +27,7 @@ This function returns the expected payoffs to Alice and Bob with respect to the 
 }
 \examples{
 init()
-moves <- list(I2, sigmaX(I2))
+moves <- list(Q$I2, sigmaX(Q$I2))
 QBOS(0, 1, moves, 5, 3, 1)
 QBOS(1, 1, moves, 5, 3, 1)
 QBOS(0.5, 0.5, moves, 5, 3, 1)

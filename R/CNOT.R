@@ -23,14 +23,14 @@
 #'
 #' @examples
 #' init()
-#' CNOT(I4)
-#' CNOT(Q11)
+#' CNOT(Q$I4)
+#' CNOT(Q$Q11)
 #'
 #' @export
 #'
 
 CNOT <- function(n){
-  x <- I4
+  x <- Q$I4
   t <- x[3,]
   x[3,] <- x[4,]
   x[4,] <- t

@@ -25,7 +25,7 @@
 #'
 #' @examples
 #' init()
-#' Rx(Q0, pi/6)
+#' Rx(Q$Q0, pi/6)
 #'
 #' @export
 #'

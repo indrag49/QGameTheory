@@ -17,8 +17,8 @@ This function operates the Phase gate on a conformable input matrix/vector
 }
 \examples{
 init()
-Phase(I2)
-Phase(Q_plus)
+Phase(Q$I2)
+Phase(Q$Q_plus)
 
 }
 \references{

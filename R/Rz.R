@@ -25,7 +25,7 @@
 #'
 #' @examples
 #' init()
-#' Rz(Q1, pi)
+#' Rz(Q$Q1, pi)
 #'
 #' @export
 #'

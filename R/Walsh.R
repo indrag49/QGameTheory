@@ -25,8 +25,8 @@
 #'
 #' @examples
 #' init()
-#' Walsh(I2)
-#' Walsh(Q0)
+#' Walsh(Q$I2)
+#' Walsh(Q$Q0)
 #'
 #' @export
 #'

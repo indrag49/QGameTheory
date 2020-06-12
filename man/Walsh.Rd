@@ -17,8 +17,8 @@ This function operates the Walsh-Hadamard gate on a conformable input matrix or 
 }
 \examples{
 init()
-Walsh(I2)
-Walsh(Q0)
+Walsh(Q$I2)
+Walsh(Q$Q0)
 
 }
 \references{

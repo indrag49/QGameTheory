@@ -27,7 +27,7 @@
 #'
 #' @examples
 #' init()
-#' moves <- list(I2, sigmaX(I2))
+#' moves <- list(Q$I2, sigmaX(Q$I2))
 #' PayoffMatrix_QHawkDove(moves, 50, -100, -10)
 #'
 #' @export

@@ -25,20 +25,20 @@
 #'
 #' @examples
 #' init()
-#' QNewcomb(Q0, 0)
-#' QNewcomb(Q1, 0)
-#' QNewcomb(Q1, 0.7)
+#' QNewcomb(Q$Q0, 0)
+#' QNewcomb(Q$Q1, 0)
+#' QNewcomb(Q$Q1, 0.7)
 #'
 #' @export
 #'
 
 
 QNewcomb <- function(Omega, probability){
-  if (Omega[[1]] == 1) Psi_in <- Q00
-  else if (Omega[[2]] == 1) Psi_in <- Q11
-  H <- Hadamard(I2)
-  sigma_x <- sigmaX(I2)
-  Psif <- kronecker(H, I2) %*% (probability*kronecker(sigma_x, I2) + (1-probability)*kronecker(I2, I2)) %*% kronecker(H, I2) %*% Psi_in
+  if (Omega[[1]] == 1) Psi_in <- Q$Q00
+  else if (Omega[[2]] == 1) Psi_in <- Q$Q11
+  H <- Hadamard(Q$I2)
+  sigma_x <- sigmaX(Q$I2)
+  Psif <- kronecker(H, Q$I2) %*% (probability*kronecker(sigma_x, Q$I2) + (1-probability)*kronecker(Q$I2, Q$I2)) %*% kronecker(H, Q$I2) %*% Psi_in
   QMeasure(Psif)
   return(Psif)
 }

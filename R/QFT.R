@@ -35,7 +35,7 @@ QFT <- function(y){
   n <- nchar(Y)
   s <- 0
   for (x in 0:(2**n-1)){
-    s <- s+exp(2*pi*1i*x*y/(2**n))*Dict[[paste(strrep('0', n-nchar(intToBin(x))), intToBin(x), sep="")]]
+    s <- s+exp(2*pi*1i*x*y/(2**n))*Q$Dict[[paste(strrep('0', n-nchar(intToBin(x))), intToBin(x), sep="")]]
   }
   s <- s/sqrt(2**n)
   return (s)

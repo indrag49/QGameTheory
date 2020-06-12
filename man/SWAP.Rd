@@ -17,8 +17,8 @@ This function operates the SWAP gate on a conformable input matrix or a vector.
 }
 \examples{
 init()
-SWAP(I4)
-SWAP(Q10)
+SWAP(Q$I4)
+SWAP(Q$Q10)
 
 }
 \references{

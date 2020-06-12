@@ -17,8 +17,8 @@ This function operates the hermitian transpose of the T gate on a conformable in
 }
 \examples{
 init()
-TDagger(I2)
-TDagger(Q_plus)
+TDagger(Q$I2)
+TDagger(Q$Q_plus)
 
 }
 \references{

@@ -19,9 +19,9 @@ This function simulates the quantum version of the Newcomb's Paradox by taking i
 }
 \examples{
 init()
-QNewcomb(Q0, 0)
-QNewcomb(Q1, 0)
-QNewcomb(Q1, 0.7)
+QNewcomb(Q$Q0, 0)
+QNewcomb(Q$Q1, 0)
+QNewcomb(Q$Q1, 0.7)
 
 }
 \references{

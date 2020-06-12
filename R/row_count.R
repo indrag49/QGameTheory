@@ -19,15 +19,14 @@
 #'
 #' @examples
 #' init()
-#' row_count(Q01)
-#' row_count(lambda5)
-#' row_count(Qt12)
+#' row_count(Q$Q01)
+#' row_count(Q$lambda5)
+#' row_count(Q$Qt12)
 #'
 #' @export
 #'
 
 row_count <- function(M){
-  if (exists(deparse(substitute(M)), envir=.GlobalEnv)) return (NROW(M))
   if (is.null(dim(M))){
     return(NROW(t(M)))
   }

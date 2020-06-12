@@ -28,7 +28,7 @@ This function also plots the probability distribution plots of the qubits for on
 }
 \examples{
 init()
-QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
+QPD(Hadamard(Q$I2), sigmaZ(Q$I2), 3, 1, 0, 5)
 
 }
 \references{

@@ -31,25 +31,25 @@
 #'
 #' @examples
 #' init()
-#' QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
+#' QPD(Hadamard(Q$I2), sigmaZ(Q$I2), 3, 1, 0, 5)
 #'
 #' @export
 #'
 
 
 QPD <- function(U_Alice, U_Bob, w, x, y, z) {
-  sigma_x <- sigmaX(I2)
-  U <- (kronecker(I2, I2)+1i*kronecker(sigma_x, sigma_x))/sqrt(2)
+  sigma_x <- sigmaX(Q$I2)
+  U <- (kronecker(Q$I2, Q$I2)+1i*kronecker(sigma_x, sigma_x))/sqrt(2)
   U_dag <- Conj(t(U))
 
-  initial <- U %*% Q00
+  initial <- U %*% Q$Q00
   PsiS <- kronecker(U_Alice, U_Bob) %*% initial
   PsiF <- U_dag %*% PsiS
 
   QMeasure(PsiF)
 
   cpsif <- Conj(t(PsiF))
-  pi_Alice_exp <- w*abs(cpsif %*% Q00)**2+y*abs(cpsif %*% Q01)**2+z*abs(cpsif %*% Q10)**2+x*abs(cpsif %*% Q11)**2
-  pi_Bob_exp <- w*abs(cpsif %*% Q00)**2+z*abs(cpsif %*% Q01)**2+y*abs(cpsif %*% Q10)**2+x*abs(cpsif %*% Q11)**2
+  pi_Alice_exp <- w*abs(cpsif %*% Q$Q00)**2+y*abs(cpsif %*% Q$Q01)**2+z*abs(cpsif %*% Q$Q10)**2+x*abs(cpsif %*% Q$Q11)**2
+  pi_Bob_exp <- w*abs(cpsif %*% Q$Q00)**2+z*abs(cpsif %*% Q$Q01)**2+y*abs(cpsif %*% Q$Q10)**2+x*abs(cpsif %*% Q$Q11)**2
   return (c(pi_Alice_exp, pi_Bob_exp))
 }

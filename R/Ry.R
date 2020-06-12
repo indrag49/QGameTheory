@@ -25,7 +25,7 @@
 #'
 #' @examples
 #' init()
-#' Ry(Q1, pi/3)
+#' Ry(Q$Q1, pi/3)
 #'
 #' @export
 #'

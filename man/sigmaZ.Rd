@@ -17,9 +17,9 @@ This function operates the Pauli-Z gate on a conformable input matrix or a vecto
 }
 \examples{
 init()
-sigmaZ(I2)
-sigmaZ(Hadamard(I2))
-sigmaZ(Q0)
+sigmaZ(Q$I2)
+sigmaZ(Hadamard(Q$I2))
+sigmaZ(Q$Q0)
 
 }
 \references{

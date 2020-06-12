@@ -23,7 +23,7 @@
 #'
 #' @examples
 #' init()
-#' QMeasure(Q10110)
+#' QMeasure(Q$Q10110)
 #'
 #' @export
 #'

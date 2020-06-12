@@ -23,8 +23,8 @@
 #'
 #' @examples
 #' init()
-#' T(I2)
-#' T(Q_minus)
+#' T(Q$I2)
+#' T(Q$Q_minus)
 #'
 #' @export
 #'

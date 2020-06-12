@@ -17,7 +17,7 @@ This function performs a projective measurement of a quantum state \code{n}, in 
 }
 \examples{
 init()
-QMeasure(Q10110)
+QMeasure(Q$Q10110)
 
 }
 \references{

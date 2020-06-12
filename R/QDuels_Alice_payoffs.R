@@ -37,8 +37,8 @@
 #'
 #' @examples
 #' init()
-#' QDuels_Alice_payoffs(Q11, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
-#' Qs <- (Q0+Q1)/sqrt(2)
+#' QDuels_Alice_payoffs(Q$Q11, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
+#' Qs <- (Q$Q0+Q$Q1)/sqrt(2)
 #' Psi <- kronecker(Qs, Qs)
 #' QDuels_Alice_payoffs(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
 #'
@@ -46,16 +46,16 @@
 #'
 
 QDuels_Alice_payoffs <- function(Psi, n, a, b, alpha1, alpha2, beta1, beta2){
-  Q0 <- as.vector(Q0)
-  Q1 <- as.vector(Q1)
-  Q00 <- as.vector(Q00)
-  Q01 <- as.vector(Q01)
-  Q10 <- as.vector(Q10)
-  Q11 <- as.vector(Q11)
+  Q$Q0 <- as.vector(Q$Q0)
+  Q$Q1 <- as.vector(Q$Q1)
+  Q$Q00 <- as.vector(Q$Q00)
+  Q$Q01 <- as.vector(Q$Q01)
+  Q$Q10 <- as.vector(Q$Q10)
+  Q$Q11 <- as.vector(Q$Q11)
   Psi <- as.vector(Psi)
 
-  Ab <- (exp(-1i*alpha1)*cos(acos(sqrt(a)))*Q11+1i*exp(1i*beta1)*sin(acos(sqrt(a)))*Q10)%o%Q11 + (exp(1i*alpha1)*cos(acos(sqrt(a)))*Q10+1i*exp(-1i*beta1)*sin(acos(sqrt(a)))*Q11)%o%Q10 + Q00%o%Q00 + Q01%o%Q01
-  Ba <- (exp(-1i*alpha2)*cos(acos(sqrt(b)))*Q11+1i*exp(1i*beta2)*sin(acos(sqrt(b)))*Q01)%o%Q11 + (exp(1i*alpha2)*cos(acos(sqrt(b)))*Q01+1i*exp(-1i*beta2)*sin(acos(sqrt(b)))*Q11)%o%Q01 + Q00%o%Q00 + Q10%o%Q10
+  Ab <- (exp(-1i*alpha1)*cos(acos(sqrt(a)))*Q$Q11+1i*exp(1i*beta1)*sin(acos(sqrt(a)))*Q$Q10)%o%Q$Q11 + (exp(1i*alpha1)*cos(acos(sqrt(a)))*Q$Q10+1i*exp(-1i*beta1)*sin(acos(sqrt(a)))*Q$Q11)%o%Q$Q10 + Q$Q00%o%Q$Q00 + Q$Q01%o%Q$Q01
+  Ba <- (exp(-1i*alpha2)*cos(acos(sqrt(b)))*Q$Q11+1i*exp(1i*beta2)*sin(acos(sqrt(b)))*Q$Q01)%o%Q$Q11 + (exp(1i*alpha2)*cos(acos(sqrt(b)))*Q$Q01+1i*exp(-1i*beta2)*sin(acos(sqrt(b)))*Q$Q11)%o%Q$Q01 + Q$Q00%o%Q$Q00 + Q$Q10%o%Q$Q10
   A <- (Ba %*% Ab)
   for(i in 1:(n-1)) A <- A %*% (Ba %*% Ab)
   Psif1 <- A %*% Psi
@@ -65,5 +65,5 @@ QDuels_Alice_payoffs <- function(Psi, n, a, b, alpha1, alpha2, beta1, beta2){
 
   C <- Ab %*% (Ba %*% Ab)
   Psif3 <- C %*% Psi
-  return(c(abs(Conj(Q10)%*%Psif1)**2+0.5*abs(Conj(Q11)%*%Psif1)**2, abs(Conj(Q10)%*%Psif2)**2+0.5*abs(Conj(Q11)%*%Psif2)**2, abs(Conj(Q10)%*%Psif3)**2+0.5*abs(Conj(Q11)%*%Psif3)**2))
+  return(c(abs(Conj(Q$Q10)%*%Psif1)**2+0.5*abs(Conj(Q$Q11)%*%Psif1)**2, abs(Conj(Q$Q10)%*%Psif2)**2+0.5*abs(Conj(Q$Q11)%*%Psif2)**2, abs(Conj(Q$Q10)%*%Psif3)**2+0.5*abs(Conj(Q$Q11)%*%Psif3)**2))
 }

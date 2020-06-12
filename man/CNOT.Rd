@@ -17,8 +17,8 @@ This function operates the CNOT gate on a conformable input matrix/vector
 }
 \examples{
 init()
-CNOT(I4)
-CNOT(Q11)
+CNOT(Q$I4)
+CNOT(Q$Q11)
 
 }
 \references{

@@ -17,8 +17,8 @@ This function operates the T gate on a conformable input matrix or a vector.
 }
 \examples{
 init()
-T(I2)
-T(Q_minus)
+T(Q$I2)
+T(Q$Q_minus)
 
 }
 \references{

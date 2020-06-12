@@ -19,7 +19,7 @@ This function operates the Rotation gate about the x-axis of the Bloch sphere by
 }
 \examples{
 init()
-Rx(Q0, pi/6)
+Rx(Q$Q0, pi/6)
 
 }
 \references{

@@ -1,6 +1,6 @@
 Package: QGameTheory
 Title: Quantum Game Theory Simulator
-Version: 0.1.1
+Version: 0.1.2
 Author: Indranil Ghosh
 Maintainer: Indranil Ghosh <indranilg49@gmail.com>
 Imports: dplyr, 

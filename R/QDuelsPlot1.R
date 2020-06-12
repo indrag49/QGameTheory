@@ -31,7 +31,7 @@
 #'
 #' @examples
 #' init()
-#' QDuelsPlot1(Q10, 2, 0.66666, 0.5, 0.2, 0.8)
+#' QDuelsPlot1(Q$Q10, 2, 0.66666, 0.5, 0.2, 0.8)
 #'
 #' @export
 #'

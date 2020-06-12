@@ -17,8 +17,8 @@ This function operates the Walsh-32 gate on a conformable input matrix or a vect
 }
 \examples{
 init()
-Walsh32(I32)
-Walsh32(Q10011)
+Walsh32(Q$I32)
+Walsh32(Q$Q10011)
 
 }
 \references{

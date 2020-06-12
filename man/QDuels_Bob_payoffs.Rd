@@ -38,8 +38,8 @@ This function returns the expected payoff to Bob for three possible cases for th
 }
 \examples{
 init()
-QDuels_Bob_payoffs(Q11, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
-Qs <- (Q0+Q1)/sqrt(2)
+QDuels_Bob_payoffs(Q$Q11, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
+Qs <- (Q$Q0+Q$Q1)/sqrt(2)
 Psi <- kronecker(Qs, Qs)
 QDuels_Bob_payoffs(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
 

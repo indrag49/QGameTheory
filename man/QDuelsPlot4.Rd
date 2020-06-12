@@ -22,8 +22,8 @@ This function helps us to plot the improvement in Bob's expected payoff as a fun
 }
 \examples{
 init()
-Qs <- (Q0+Q1)/sqrt(2)
-Psi <- kronecker(Q1, Qs)
+Qs <- (Q$Q0+Q$Q1)/sqrt(2)
+Psi <- kronecker(Q$Q1, Qs)
 QDuelsPlot4(Psi, pi/3, pi/6)
 
 }
