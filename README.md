@@ -44,26 +44,26 @@ Where an environement has been developed for holding the variables:
 Q <<- new.env(parent=emptyenv())
 ```
 
-All the global parameters/variables are made visible by:
+All the parameters/variables in the environment are made visible by:
 
 ```{r}
-ls()
+ls(Q)
 ```
 The simulator has access to maximum six qubits for quantum computations. Qubits |1>, |0110> and |111110> can be simulated as:
 
 ```{r}
-Q1
-Q0110
-Q111110
+Q$Q1
+Q$Q0110
+Q$Q111110
 ```
 This code chunk when run, produces:
 
 ```{r}
-> Q1
+> Q$Q1
      [,1]
 [1,]    0
 [2,]    1
-> Q0110
+> Q$Q0110
       [,1]
  [1,]    0
  [2,]    0
@@ -81,7 +81,7 @@ This code chunk when run, produces:
 [14,]    0
 [15,]    0
 [16,]    0
-> Q111110
+> Q$Q111110
       [,1]
  [1,]    0
  [2,]    0
@@ -151,7 +151,7 @@ This code chunk when run, produces:
 The identity matrix:
 
 ```{r}
-> I2
+> Q$I2
      [,1] [,2]
 [1,]    1    0
 [2,]    0    1
@@ -159,15 +159,15 @@ The identity matrix:
 The Pauli-X, Pauli-Y and the Pauli-Z matrix:
 
 ```{r}
-> sigmaX(I2)
+> sigmaX(Q$I2)
      [,1] [,2]
 [1,]    0    1
 [2,]    1    0
-> sigmaY(I2)
+> sigmaY(Q$I2)
      [,1] [,2]
 [1,] 0+0i 0-1i
 [2,] 0+1i 0+0i
-> sigmaZ(I2)
+> sigmaZ(Q$I2)
      [,1] [,2]
 [1,]    1    0
 [2,]    0   -1
@@ -176,7 +176,7 @@ The Pauli-X, Pauli-Y and the Pauli-Z matrix:
 The Hadamard Gate:
 
 ```{r}
-> Hadamard(I2)
+> Hadamard(Q$I2)
           [,1]       [,2]
 [1,] 0.7071068  0.7071068
 [2,] 0.7071068 -0.7071068
@@ -184,11 +184,11 @@ The Hadamard Gate:
 The application of Pauli-X gate on |0> and on |1>, i.e, the spin flip operations on qubits, can be simulated in the following way:
 
 ```{r}
-> sigmaX(Q0)
+> sigmaX(Q$Q0)
      [,1]
 [1,]    0
 [2,]    1
-> sigmaX(Q1)
+> sigmaX(Q$Q1)
      [,1]
 [1,]    1
 [2,]    0
@@ -196,19 +196,19 @@ The application of Pauli-X gate on |0> and on |1>, i.e, the spin flip operations
 There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, Rx, etc.
 
 ```{r}
-> CNOT(I4)
+> CNOT(Q$I4)
      [,1] [,2] [,3] [,4]
 [1,]    1    0    0    0
 [2,]    0    1    0    0
 [3,]    0    0    0    1
 [4,]    0    0    1    0
-> CNOT(Q11)
+> CNOT(Q$Q11)
      [,1]
 [1,]    0
 [2,]    0
 [3,]    1
 [4,]    0
-> Fredkin(Q110)
+> Fredkin(Q$Q110)
      [,1]
 [1,]    0
 [2,]    0
@@ -218,7 +218,7 @@ There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, 
 [6,]    1
 [7,]    0
 [8,]    0
-> Toffoli(Q010)
+> Toffoli(Q$Q010)
      [,1]
 [1,]    0
 [2,]    0
@@ -228,19 +228,19 @@ There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, 
 [6,]    0
 [7,]    0
 [8,]    0
-> T(Q_minus)
+> T(Q$Q_minus)
                 [,1]
 [1,]  0.7071068+0.0i
 [2,] -0.5000000-0.5i
-> Phase(I2)
+> Phase(Q$I2)
      [,1] [,2]
 [1,] 1+0i 0+0i
 [2,] 0+0i 0+1i
-> Phase(Q_plus)
+> Phase(Q$Q_plus)
                      [,1]
 [1,] 0.7071068+0.0000000i
 [2,] 0.0000000+0.7071068i
-> Rx(Q1, pi/3)
+> Rx(Q$Q1, pi/3)
                     [,1]
 [1,] 0.9659258+0.000000i
 [2,] 0.0000000-0.258819i
@@ -248,13 +248,13 @@ There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, 
 One can prepare on of the 4 Bell states by using:
 
 ```{r}
-> Bell(Q0, Q1)
+> Bell(Q$Q0, Q$Q1)
           [,1]
 [1,] 0.0000000
 [2,] 0.7071068
 [3,] 0.7071068
 [4,] 0.0000000
-> Bell(Q1, Q1)
+> Bell(Q$Q1, Q$Q1)
            [,1]
 [1,]  0.0000000
 [2,]  0.7071068
@@ -280,9 +280,9 @@ The **Quantum Fourier Transform** for a given state |y> is simulated by:
 Finally for preparing and measuring an arbitrary quantum state,
 
 ```{r}
-> sigma_x <- sigmaX(I2)
-> U <- (kronecker(I2, I2)+1i*kronecker(sigma_x, sigma_x))/sqrt(2)
-> Psi <- U %*% Q00
+> sigma_x <- sigmaX(Q$I2)
+> U <- (kronecker(Q$I2, Q$I2)+1i*kronecker(sigma_x, sigma_x))/sqrt(2)
+> Psi <- U %*% Q$Q00
 > Psi
                      [,1]
 [1,] 0.7071068+0.0000000i
@@ -332,13 +332,13 @@ For the game tree mentioned below:
 The simulation codes go in the following way:
 
 ```{r}
-> psi <- (u+d)/sqrt(2)
-> S1 <- sigmaX(I2)
-> S2 <- I2
-> H <- Hadamard(I2)
+> psi <- (Q$Q0+Q$Q1)/sqrt(2)
+> S1 <- sigmaX(Q$I2)
+> S2 <- Q$I2
+> H <- Hadamard(Q$I2)
 > SA <- list(S1, S2)
 > SB <- list(H)
-> QPennyFlip(psi, SA,SB)
+> QPennyFlip(psi,SA,SB)
 ```
 It produces the plot:
 
@@ -349,7 +349,7 @@ It produces the plot:
 One instance of the Quantum Prisoner's Dilemma game can be simulated first by providing the strategies played by both Alice and Bob along with the payoffs *w, x, y, z* available to them corresponding to their choices. The payoffs follow, *z>w>x>y*. 
 
 ```{r}
-> QPD(Hadamard(I2), sigmaZ(I2), 3, 1, 0, 5)
+> QPD(Hadamard(Q$I2), sigmaZ(Q$I2), 3, 1, 0, 5)
 [1] 1.5 4.0
 ```
 
@@ -360,7 +360,7 @@ It also generates the plot:
 The payoff matrix of the **Quantum Prisoner's Dilemma** for both the players can be constructed:
 
 ```{r}
-> moves <- list(I2, sigmaX(I2), Hadamard(I2), sigmaZ(I2))
+> moves <- list(Q$I2, sigmaX(Q$I2), Hadamard(Q$I2), sigmaZ(Q$I2))
 > PayoffMatrix_QPD(moves, 3, 1, 0, 5)
 [[1]]
      [,1] [,2] [,3] [,4]
@@ -390,7 +390,7 @@ Simulation is carried out to calculate the expected payoffs to Alice and Bob for
 3) The game is continued for 2 rounds and Bob shoots at the air in her second round.
 
 ```{r}
-> Qs <- (Q0+Q1)/sqrt(2)
+> Qs <- (Q$Q0+Q$Q1)/sqrt(2)
 > Psi <- kronecker(Qs, Qs)
 > QDuels_Alice_payoffs(Psi, 5, 0.666666, 0.5, 0, 0, 0.2, 0.7)
 [1] 0.2087876 0.3281732 0.4894636
@@ -442,7 +442,7 @@ QDuelsPlot4(Psi, 0, 0)
 One instance for the **Quantum Battle of the Sexes** can be computed for a particular set of probability values:
 
 ```{r}
-> moves <- list(I2, sigmaX(I2))
+> moves <- list(Q$I2, sigmaX(Q$I2))
 > QBOS(0, 1, moves, 5, 3, 1)
 [1] 1.875 2.375
 ```
@@ -466,7 +466,7 @@ The payoff matrix for the quantum game consisting of all the possible combinatio
 The quantum version of the Newcomb's Paradox can be simulated by taking in the choice of the qubit |0> or |1> by the supercomputer 'Omega' and the probability with which Alice plays the spin flip operator as the input parameters.
 
 ```{r}
-> QNewcomb(Q1, 0)
+> QNewcomb(Q$Q1, 0)
      [,1]
 [1,]    0
 [2,]    0
@@ -480,7 +480,7 @@ The quantum version of the Newcomb's Paradox can be simulated by taking in the c
 One instance of the **Quantum Hawk and Dove** game can be simulated for a particular set of probability values:
 
 ```{r}
-> moves <- list(I2, sigmaX(I2))
+> moves <- list(Q$I2, sigmaX(Q$I2))
 > QHawkDove(0, 1, moves, 50, -100, -10)
 [1] 18.75 18.75
 ```
@@ -505,17 +505,17 @@ The payoff matrix for the quantum game consisting of all the possible combinatio
 The qutrits required for this problem can be constructed in the following way:
 
 ```{r}
-> Qt0
+> Q$Qt0
      [,1]
 [1,]    1
 [2,]    0
 [3,]    0
-> Qt1
+> Q$Qt1
      [,1]
 [1,]    0
 [2,]    1
 [3,]    0
-> Qt2
+> Q$Qt2
      [,1]
 [1,]    0
 [2,]    0
@@ -525,12 +525,12 @@ The qutrits required for this problem can be constructed in the following way:
 Some SU(3) matrices:
 
 ```{r}
-> Identity3
+> Q$Identity3
      [,1] [,2] [,3]
 [1,]    1    0    0
 [2,]    0    1    0
 [3,]    0    0    1
-> Hhat
+> Q$Hhat
                       [,1]                  [,2]                 [,3]
 [1,]  0.7071068+0.0000000i  0.5000000+0.0000000i 0.5000000+0.0000000i
 [2,] -0.5000000+0.0000000i  0.5303301-0.4677072i 0.1767767+0.4677072i
@@ -540,7 +540,7 @@ Some SU(3) matrices:
 A quantum state is prepared first from the qutrits:
 
 ```{r}
-> Psi_in <- kronecker(Qt0, (Qt00+Qt11+Qt22)/sqrt(3))
+> Psi_in <- kronecker(Q$Qt0, (Q$Qt00+Q$Qt11+Q$Qt22)/sqrt(3))
 > Psi
      [,1]
 [1,]  0.5
@@ -552,7 +552,7 @@ A quantum state is prepared first from the qutrits:
 The **Quantum Monty Hall** problem, next, is simulated in the following way:
 
 ```{r}
-> QMontyHall(Psi_in, pi/4, Identity3, Hhat)
+> QMontyHall(Psi_in, pi/4, Q$Identity3, Q$Hhat)
 [1] 0.125 0.875
 ```
 
@@ -567,9 +567,9 @@ Some of the functions that are required for the analyses are:
 The above function calculates the number of rows in a matrix or a vector
 
 ```{r}
-> row_count(Q01)
+> row_count(Q$Q01)
 [1] 4
-> row_count(I8)
+> row_count(Q$I8)
 [1] 8
 ```
 
@@ -578,9 +578,9 @@ The above function calculates the number of rows in a matrix or a vector
 The above function calculates the number of columns in a matrix or a vector
 
 ```{r}
-> col_count(Q01)
+> col_count(Q$Q01)
 [1] 1
-> col_count(I8)
+> col_count(Q$I8)
 [1] 8
 ```
 
