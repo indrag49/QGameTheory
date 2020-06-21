@@ -1,4 +1,4 @@
-# QGameTheory <img src="man/figures/logo.png" align="right" width="100px " alt=""/>
+# QGameTheory <img src="man/figures/logo.png" align="right" width="200px " alt=""/>
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
 [![CRAN\_MonthlyDownloads](http://cranlogs.r-pkg.org/badges/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
