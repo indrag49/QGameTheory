@@ -1,4 +1,4 @@
-# QGameTheory
+# QGameTheory <img src="man/figures/logo.png" align="right" width="100px " alt=""/>
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
 [![CRAN\_MonthlyDownloads](http://cranlogs.r-pkg.org/badges/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
@@ -600,3 +600,7 @@ Calculates the Levi-Civita function for the integers: 0, 1 and 2
 > levi_civita(1, 2, 1)
 [1] 0
 ```
+
+---
+
+Logo designed by Manash Kashyap
