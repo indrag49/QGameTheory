@@ -381,7 +381,7 @@ The payoff matrix of the **Quantum Prisoner's Dilemma** for both the players can
 [4,]  1.0  0.0 1.50    3
 ```
 
-The above code also generates all the sixteen possible combinations of plots. Analysing, it is noticed that the quntum version helps us escape the so called dilemma in the classical Prisoner's dilemma game. One next uses the **IDSDS** algorithm to find the **strictly dominant strategy equilibrium**. The **NASH** equilibrium is also calculated by the above codes. It can be seen that both of them give the same result and the equilibrium is Pareto Optimum too.
+The above code also generates all the sixteen possible combinations of plots. Analysing, it is noticed that the quantum version helps us escape the so called dilemma in the classical Prisoner's dilemma game. One next uses the **IDSDS** algorithm to find the **strictly dominant strategy equilibrium**. The **NASH** equilibrium is also calculated by the above codes. It can be seen that both of them give the same result and the equilibrium is Pareto Optimum too.
 
 ### Quantum Two Person Duel
 
