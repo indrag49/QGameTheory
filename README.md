@@ -1,7 +1,6 @@
 # QGameTheory <img src="man/figures/logo.png" align="right" width="300px " alt=""/>
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
-[![R build status\ Status\ Badge](https://github.com/r-lib/QGameTheory/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/QGameTheory/actions)
 [![CRAN\_MonthlyDownloads](http://cranlogs.r-pkg.org/badges/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
 
 ---
