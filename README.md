@@ -2,6 +2,7 @@
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
 [![CRAN\_MonthlyDownloads](http://cranlogs.r-pkg.org/badges/QGameTheory)](https://cran.r-project.org/package=QGameTheory)
+[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/QGameTheory)](https://CRAN.R-project.org/package=QGameTheory)
 
 ---
 Title: 'QGameTheory: Quantum Game Theory Simulator'
