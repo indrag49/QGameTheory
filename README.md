@@ -10,6 +10,12 @@ Author: "Indranil Ghosh"
 
 Description: General purpose toolbox for simulating quantum versions of game theoretic models. Quantum versions of models that have been handeled are: Penny Flip Game, Prisoner's Dilemma, Two Person Duel, Battle of the Sexes, Newcomb's Paradox, Hawk and Dove Game and Monty Hall Problem.
 
+News: Selected as one of the JUNE 2020 : "Top 40" New CRAN Packages, picked by Joseph Rickert [@RStudioJoe](https://twitter.com/RStudioJoe)
+
+1. [R Community Blog](https://rviews.rstudio.com/2020/07/27/june-2020-top-40-new-cran-packages/)
+
+2. [R-bloggers](https://www.r-bloggers.com/june-2020-top-40-new-cran-packages/)
+
 ---
 
 ## Installation
