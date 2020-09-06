@@ -14,7 +14,7 @@ affiliations:
    index: 1
  - name: Research Lead, Sirpi Products and Services Pvt. Ltd.
    index: 2
-date: 12 June 2020
+date: 06 September 2020
 bibliography: paper.bib
 ---
 
