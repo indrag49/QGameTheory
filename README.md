@@ -255,7 +255,7 @@ There are other important quantum gates like: CNOT, Fredkin, Toffoli, T, Phase, 
 [1,] 0.9659258+0.000000i
 [2,] 0.0000000-0.258819i
 ```
-One can prepare on of the 4 Bell states by using:
+One can prepare one of the 4 Bell states by using:
 
 ```{r}
 > Bell(Q$Q0, Q$Q1)
