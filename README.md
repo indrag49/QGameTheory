@@ -610,7 +610,7 @@ Calculates the Levi-Civita function for the integers: 0, 1 and 2
 ```
 
 ---
-# References
+# Some Useful References
 1. https://arxiv.org/abs/quant-ph/0208069
 
 2. https://arxiv.org/abs/quant-ph/9804010
@@ -629,9 +629,13 @@ Calculates the Levi-Civita function for the integers: 0, 1 and 2
 
 9. https://github.com/indrag49/Quantum-SimuPy
 
-10. https://www.amazon.in/Quantum-Computation-Information-10th-Anniversary/dp/1107002176
+10. https://github.com/corbett/QuantumComputing
 
-11. https://arxiv.org/abs/1512.06808
+11. https://github.com/tvganesh/QCSimulator/tree/master/R
+
+12. https://www.amazon.in/Quantum-Computation-Information-10th-Anniversary/dp/1107002176
+
+13. https://arxiv.org/abs/1512.06808
 ---
 
 Logo designed by Manash Kashyap
