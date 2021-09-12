@@ -631,7 +631,9 @@ Calculates the Levi-Civita function for the integers: 0, 1 and 2
 
 10. https://quantum-computing.ibm.com/
 
+11. https://www.amazon.in/Quantum-Computation-Information-10th-Anniversary/dp/1107002176
 
+12. https://arxiv.org/abs/1512.06808
 ---
 
 Logo designed by Manash Kashyap
