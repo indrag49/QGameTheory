@@ -627,11 +627,11 @@ Calculates the Levi-Civita function for the integers: 0, 1 and 2
 
 8. https://arxiv.org/abs/quant-ph/0109035
 
-9. https://github.com/indrag49/Quantum-SimuPy
+9. https://github.com/corbett/QuantumComputing
 
-10. https://github.com/corbett/QuantumComputing
+10. https://github.com/tvganesh/QCSimulator
 
-11. https://github.com/tvganesh/QCSimulator/tree/master/R
+11. https://github.com/indrag49/Quantum-SimuPy
 
 12. https://www.amazon.in/Quantum-Computation-Information-10th-Anniversary/dp/1107002176
 
